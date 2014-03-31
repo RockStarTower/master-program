@@ -1,0 +1,565 @@
+[17-Oct-2013 14:35:49] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 14:37:25] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 14:37:26] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 14:44:35] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 14:46:17] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:15:17] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:16:58] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:17:04] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:18:59] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:20:38] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:21:02] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:21:23] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 10
+[17-Oct-2013 15:22:35] PHP Parse error:  syntax error, unexpected '{' in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 8
+[17-Oct-2013 15:24:17] PHP Parse error:  syntax error, unexpected '}' in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 9
+[17-Oct-2013 15:25:46] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'intentm1_master'@'localhost' (using password: YES) in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 5
+[17-Oct-2013 15:25:46] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 7
+[17-Oct-2013 15:25:46] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 7
+[17-Oct-2013 15:26:38] PHP Warning:  mysqli_query() [<a href='function.mysqli-query'>function.mysqli-query</a>]: Empty query in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 7
+[17-Oct-2013 15:27:46] PHP Warning:  mysqli_query() [<a href='function.mysqli-query'>function.mysqli-query</a>]: Empty query in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 7
+[17-Oct-2013 17:14:16] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_billing.php on line 10
+[17-Oct-2013 17:18:04] PHP Parse error:  syntax error, unexpected '}' in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_host_login.php on line 28
+[17-Oct-2013 17:20:38] PHP Parse error:  syntax error, unexpected '}' in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_host_login.php on line 28
+[25-Oct-2013 16:41:38] PHP Fatal error:  Call to undefined function  sql_connect() in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 62
+[28-Oct-2013 14:52:25] PHP Fatal error:  Call to undefined function  sql_connect() in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_value_metrics_action.php on line 37
+[28-Oct-2013 14:59:30] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_value_metrics_action.php on line 22
+[28-Oct-2013 15:14:56] PHP Fatal error:  Call to undefined function  sql_connect() in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_billing_action.php on line 53
+[28-Oct-2013 15:21:28] PHP Fatal error:  Call to undefined function  sql_connect() in /home2/ecoabsor/public_html/Master_Project/update_forms/build_history_action.php on line 88
+[28-Oct-2013 16:42:11] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/host_billing_info_action.php on line 22
+[28-Oct-2013 17:15:17] PHP Parse error:  syntax error, unexpected ';' in /home2/ecoabsor/public_html/Master_Project/update_forms/host_basic_details_action.php on line 78
+[01-Nov-2013 17:18:01] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 19
+[04-Nov-2013 16:58:28] PHP Fatal error:  Call to undefined function  registrarlist() in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 61
+[04-Nov-2013 17:00:47] PHP Fatal error:  Call to undefined function  managewplist() in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 57
+[04-Nov-2013 17:44:26] PHP Fatal error:  Call to undefined function  hostaccountlist() in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_host_basic.php on line 38
+[04-Nov-2013 18:13:20] PHP Fatal error:  Cannot redeclare hostaccountlist() (previously declared in /home2/ecoabsor/public_html/Master_Project/functions.php:3) in /home2/ecoabsor/public_html/Master_Project/functions.php on line 48
+[04-Nov-2013 18:14:26] PHP Fatal error:  Cannot redeclare hostaccountlist() (previously declared in /home2/ecoabsor/public_html/Master_Project/functions.php:3) in /home2/ecoabsor/public_html/Master_Project/functions.php on line 48
+[13-Nov-2013 13:29:11] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/ecoabsor/public_html/Master_Project/update_forms/check_host_account.php on line 28
+[13-Nov-2013 13:29:22] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/ecoabsor/public_html/Master_Project/update_forms/check_host_account.php on line 28
+[13-Nov-2013 14:11:34] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/ecoabsor/public_html/Master_Project/update_forms/check_host_account.php on line 28
+[13-Nov-2013 14:14:12] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/ecoabsor/public_html/Master_Project/update_forms/check_host_account.php on line 28
+[13-Nov-2013 14:17:50] PHP Parse error:  syntax error, unexpected '*' in /home2/ecoabsor/public_html/Master_Project/update_forms/check_host_account.php on line 28
+[13-Nov-2013 16:05:25] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[13-Nov-2013 16:29:25] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[13-Nov-2013 16:34:00] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[13-Nov-2013 16:41:51] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[19-Nov-2013 11:11:44] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[19-Nov-2013 11:12:09] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Vertical in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 3
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Vertical_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 4
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Vertical_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 5
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Status in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 6
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Status_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 7
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Status_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 8
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Type in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 9
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Type_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 10
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Type_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 11
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: HostAccount in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 12
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: HostAccount_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 13
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: HostAccount_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 14
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Country in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 15
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Country_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 16
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Country_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 17
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: RenewalDate in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 18
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: RenewalDate_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 19
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: RenewalDate_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 20
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Location in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 21
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Location_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 22
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Location_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 23
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateBought in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 24
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateBought_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 25
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateBought_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 26
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Language in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 27
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Language_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 28
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: Language_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 29
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateComplete in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 30
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateComplete_Before in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 31
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DateComplete_Field in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 32
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: TimeStamp in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 33
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: User in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 34
+[19-Nov-2013 12:53:20 America/Denver] PHP Notice:  Undefined index: DomainName in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_basic_details_action.php on line 35
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[19-Nov-2013 13:39:30 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 174
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[19-Nov-2013 13:39:51 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 174
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[19-Nov-2013 13:40:39 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 174
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[19-Nov-2013 13:41:40 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 174
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[19-Nov-2013 13:42:47 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 174
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 17:32:51 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 17:47:28 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 17:47:46 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 20:53:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 20:55:13 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 20:55:24 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[21-Nov-2013 20:56:03 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[22-Nov-2013 17:40:21 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 24
+[22-Nov-2013 17:40:21 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 51
+[22-Nov-2013 17:40:21 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 92
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[23-Nov-2013 12:18:29 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[25-Nov-2013 09:52:53 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[25-Nov-2013 09:52:53 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[25-Nov-2013 09:52:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[26-Nov-2013 10:55:44 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[26-Nov-2013 11:10:38 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[26-Nov-2013 11:10:55 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[26-Nov-2013 11:11:02 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[27-Nov-2013 08:36:45 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[27-Nov-2013 08:36:45 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[27-Nov-2013 08:36:45 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[27-Nov-2013 09:23:03 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[27-Nov-2013 09:23:28 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[27-Nov-2013 09:24:43 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 27
+[02-Dec-2013 13:48:59 America/Denver] PHP Warning:  include(): Failed opening 'users/loginheader.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 3
+[02-Dec-2013 13:49:00 America/Denver] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 4
+[02-Dec-2013 13:49:00 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 5
+[02-Dec-2013 13:49:20 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 13:49:20 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 32
+[02-Dec-2013 13:49:46 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 13:58:11 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 13:58:11 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 32
+[02-Dec-2013 14:01:08 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:01:08 America/Denver] PHP Fatal error:  Cannot break/continue 1 level in /home2/ecoabsor/public_html/Master_Project/update_forms/new_host_action.php on line 32
+[02-Dec-2013 14:04:02 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:04:57 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:05:47 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:06:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:06:49 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:06:55 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:07:00 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[02-Dec-2013 14:07:06 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[04-Dec-2013 10:53:33 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 28
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 29
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 40
+[04-Dec-2013 11:57:25 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 176
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[04-Dec-2013 13:36:17 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 10:13:07 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:13:07 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:13:07 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 10:16:03 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 10:16:29 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 10:40:50 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:40:50 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:40:50 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:41:39 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:41:39 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:41:39 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:42:16 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:42:16 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:42:16 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:44:43 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:44:43 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:44:43 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:45:05 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:45:05 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:45:05 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:46:33 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:46:33 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:46:33 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 10:50:06 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[05-Dec-2013 10:50:06 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[05-Dec-2013 10:50:06 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:49:29 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:49:41 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:49:47 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:49:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:50:03 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:50:17 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:50:23 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:50:28 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[05-Dec-2013 14:50:36 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[06-Dec-2013 11:16:18 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_host_login.php on line 67
+[06-Dec-2013 12:10:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[06-Dec-2013 12:10:54 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[06-Dec-2013 12:10:54 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[06-Dec-2013 12:10:54 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[06-Dec-2013 12:10:54 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[06-Dec-2013 12:10:54 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[09-Dec-2013 15:11:48 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[09-Dec-2013 15:11:48 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[09-Dec-2013 15:11:48 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 15:00:11 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 15:05:42 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 18
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 26
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 27
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 28
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 29
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 38
+[10-Dec-2013 15:09:28 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 98
+[10-Dec-2013 15:09:48 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 20
+[10-Dec-2013 15:09:48 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 40
+[10-Dec-2013 15:09:48 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 158
+[10-Dec-2013 15:10:34 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[10-Dec-2013 15:10:34 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[10-Dec-2013 15:10:34 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[10-Dec-2013 15:11:46 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 15:21:22 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 15:26:16 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 15:33:01 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[10-Dec-2013 15:49:43 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[10-Dec-2013 16:15:45 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[10-Dec-2013 16:15:45 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[10-Dec-2013 16:15:45 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[10-Dec-2013 16:17:36 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 20
+[10-Dec-2013 16:17:36 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 40
+[10-Dec-2013 16:17:36 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 158
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 18
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 26
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 27
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 28
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 29
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 38
+[10-Dec-2013 16:19:31 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 98
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 18
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 26
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 27
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 28
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 29
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 38
+[10-Dec-2013 16:42:30 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_value_metrics.php on line 98
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[10-Dec-2013 16:42:35 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[11-Dec-2013 10:08:12 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 20
+[11-Dec-2013 10:08:12 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 40
+[11-Dec-2013 10:08:12 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_logistics.php on line 158
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[11-Dec-2013 10:09:40 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[11-Dec-2013 11:30:10 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[12-Dec-2013 11:05:58 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[16-Dec-2013 13:11:57 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[17-Dec-2013 10:48:30 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[17-Dec-2013 10:48:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[17-Dec-2013 10:53:16 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[17-Dec-2013 10:54:34 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[17-Dec-2013 10:54:41 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[17-Dec-2013 10:55:18 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[17-Dec-2013 11:00:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[18-Dec-2013 14:32:06 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[18-Dec-2013 17:48:38 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[18-Dec-2013 17:48:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[26-Dec-2013 13:52:42 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 13:42:44 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[30-Dec-2013 13:44:43 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home2/ecoabsor/public_html/Master_Project/users/loginfunctions.php on line 20
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 13:51:07 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 13:51:44 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 13:58:42 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[30-Dec-2013 14:02:45 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 14:03:44 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 18
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 26
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 27
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 28
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 29
+[30-Dec-2013 14:03:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_build_history.php on line 99
+[30-Dec-2013 14:04:07 America/Denver] PHP Notice:  Undefined variable: newHostAccount in /home2/ecoabsor/public_html/Master_Project/update_forms/build_history_action.php on line 103
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 14:06:53 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 14:07:13 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined index: DatabaseName in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 30
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined index: DatabaseUser in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 31
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined index: DatabasePassword in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 32
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined index: DatabaseHost in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 33
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined index: ContentFinish in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 42
+[30-Dec-2013 15:16:18 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_basic.php on line 201
+[06-Jan-2014 14:50:51 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 25
+[06-Jan-2014 14:50:51 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 52
+[06-Jan-2014 14:50:51 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 99
+[06-Jan-2014 14:58:45 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 26
+[06-Jan-2014 14:58:45 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 53
+[06-Jan-2014 14:58:45 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 106
+[06-Jan-2014 14:58:51 America/Denver] PHP Notice:  Undefined variable: WhoIsRenewal in /home2/ecoabsor/public_html/Master_Project/update_forms/domain_registration_action.php on line 60
+[06-Jan-2014 15:00:11 America/Denver] PHP Notice:  Undefined index: DateLaunched in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 26
+[06-Jan-2014 15:00:11 America/Denver] PHP Notice:  Undefined index: DevFinished in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 53
+[06-Jan-2014 15:00:11 America/Denver] PHP Notice:  Undefined variable: user in /home2/ecoabsor/public_html/Master_Project/update_forms/edit_domain_registration.php on line 106

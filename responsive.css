@@ -1,0 +1,162 @@
+/*Responsive Design for the Master*/
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+.home_background {
+width: 96%;
+padding: 2% 0 2% 0;
+}
+}
+
+@media only screen and (max-width: 1563px) {
+#logo_small {
+	padding-top: 58px;
+}	
+@media only screen and (max-width: 1258px) {
+#logo_small {
+	display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+#searchbar {
+width: 750px;
+	}
+#searchbar input {
+	width: 520px;
+	}
+.home-wrap {
+	width: 	900px;
+}	
+.home_logo {
+	width: 	750px;
+	}
+.quote {
+	width: 750px;
+	}
+	#header {
+	width: 714px;
+	}
+}
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 1000px) {
+#searchbar {
+	width: 650px;
+		}
+#searchbar input {
+	width: 420px;
+		}
+.home-wrap {
+	width: 650px;
+		}	
+.home_logo {
+	width: 	650px;
+		}
+.quote {
+	width: 650px;
+	font-size: 1.8em;
+		}	
+#header {
+	width: 646px;
+	}
+}
+
+@media only screen and (max-width: 875px) {
+#searchbar {
+	width: 550px;
+		}
+#searchbar input {
+	width: 322px;
+		}
+.home-wrap {
+	width: 550px;
+		}	
+.home_logo {
+	width: 	550px;
+		}
+.quote {
+	width: 550px;
+	font-size: 1.5em;
+		}	
+#header {
+	width: 563px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+#searchbar {
+	width: 470px;
+	height: 26px;
+		}
+#searchbar input {
+	width: 289px;
+		}
+.home-wrap {
+	width: 470px;
+		}	
+.home_logo {
+	width: 	470px;
+		}
+.quote {
+	width: 470px;
+	font-size: 1.3em;
+		}	
+#searchsubmit,#logo_small {
+	display: none;
+}
+#header {
+	width: 563px;
+	}
+@media only screen and (max-width: 600px) {
+#searchbar {
+	width: 350px;
+	height: 26px;
+		}
+#searchbar input {
+	width: 169px;
+		}
+.home-wrap {
+	width: 350px;
+		}	
+.home_logo {
+	width: 	350px;
+		}
+.quote {
+	width: 350px;
+	font-size: 1.1em;
+		}	
+#searchsubmit,#logo_small {
+	display: none;
+}
+#header {
+	width: 400px;
+	}
+@media only screen and (max-width: 475px) {
+#searchbar {
+	width: 280px;
+	height: 26px;
+		}
+#searchbar input {
+	width: 99px;
+		}
+.home-wrap {
+	width: 308px;
+		}	
+.home_logo {
+	width: 	280px;
+		}
+.quote {
+	width: 280px;
+	font-size: .8em;
+		}	
+#searchsubmit,#logo_small {
+	display: none;
+}
+#header {
+	width: 300px;
+}
+}

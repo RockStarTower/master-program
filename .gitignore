@@ -1,0 +1,11 @@
+$ cat .gitignore
+
+beyoncebeyoncebeyonce/**
+forbidden/**
+kb/**
+mixitup/**
+restricted/**
+xampp/**
+sandbox/**
+wireframe_forms/content/**
+export/**
