@@ -1258,3 +1258,10 @@ $(function() {
 	setInterval(numbers, 1000);
 	});
 });
+$(document).on("keyup", ".add", function () {
+	dolla = $(this).val();
+	while(dolla.indexOf('$') > -1){
+		dolla = dolla.replace("$","");
+		$(this).val(dolla);
+	}
+});
