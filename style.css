@@ -1861,7 +1861,8 @@ text-align: center;
 #popout_task input::-webkit-input-placeholder {
 	color: #fff;
 }
-.popout_button, .popout_return {
+
+.popout_button, .popout_return, .return_support {
     margin: 10px 0;
     border-radius: 5px;
     background: rgba(215,141,67,1);
@@ -1874,6 +1875,9 @@ text-align: center;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 600;
+}
+.return_support {
+	margin-right: 5px;
 }
 .buttons {
 	float: right;
