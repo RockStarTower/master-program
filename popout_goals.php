@@ -54,7 +54,7 @@ if(isset($_GET['blog']) && !empty($_GET['blog'])){
 else {
 $blog = '';
 }
-echo '<h2 id="popout_vertical">'.$vertical.'</h2>';
+echo '<h2 id="popout_vertical">'.$vertical .' '. $country .' '. $language.'</h2>';
 echo '<div id="popout_goals">';
 $results = mysqli_query($mysqli, "SELECT * FROM DomainDetails WHERE Status='In Process'");
 $rows = mysqli_num_rows($results);
