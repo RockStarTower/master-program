@@ -717,10 +717,7 @@ function domaindatabase() {
 	print_r($numericalarray);
 	
 }
-
-function root_url(){
-	echo 'http://darth-serverus.boocorp.com/';
-}
+include 'rooturl.php';
 
 
 function userGoals($fullname, $permissions, $mysqli) {
