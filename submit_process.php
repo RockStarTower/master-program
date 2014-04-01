@@ -7,6 +7,7 @@ $username = $_POST['user'];
 if(isset($_POST['permissions'])){
 	$permissions = $_POST['permissions'];
 }
+if(isset($_POST['outsourced'])){$outsourced = $_POST['outsourced'];}
 if(isset($_POST['reviewnotes'])){$reviewnotes = $_POST['reviewnotes'];}
 if(isset($_POST['writer'])){$writer = $_POST['writer'];}
 if(isset($_POST['contenthours'])){$content_hours = $_POST['contenthours'];}
@@ -21,7 +22,7 @@ if(isset($_POST['databasehost'])){$dbhost = $_POST['databasehost'];}
 
 switch ($permissions) {
 	case 'Content':
-		$query = "UPDATE DomainDetails SET ContentStart='$date',Writer='$writer' WHERE Domain='$domain'";
+		$query = "UPDATE DomainDetails SET Outsourced='$outsourced',ContentStart='$date',Writer='$writer' WHERE Domain='$domain'";
 		break;
 	case 'Writer':
 		if(isset($_POST['reviewed']) && $_POST['reviewed'] == 'reviewed'){
