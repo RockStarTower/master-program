@@ -4,7 +4,11 @@ include 'functions.php';
 include 'config.php';
 
 $domain = $_GET['domain'];
-
+if(isset($_GET['fixed']) && !empty($_GET['fixed'])){
+	$fixed = $_GET['fixed'];
+} else {
+	$fixed = '';
+}
 
 switch ($permissions) {
 	case 'Content':
@@ -254,7 +258,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 	<?php if($writing != 'Writing'){ ?>
 		<a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" class="return_support">Send To Support</a><a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
 	<?php } 
-	if ($_GET['fixed'] != 'fixed'){
+	if (!isset($_GET['fixed'])){
 	?>
 		<button class="popout_button">Submit</button>
 	<?php } else {
