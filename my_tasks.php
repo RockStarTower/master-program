@@ -69,8 +69,8 @@ function my_proccess_support($mysqli, $query, $fullname, $fulldate){
 	$domain_data = mysqli_fetch_assoc($results);
 	if ($domain_data['Domain'] !== ''){
 	?><div class="my_task">
-		<a class="view_task ready active_goal" data-domain="<?=$domain_data['Domain']?>" href="#">View</a>
-		<h2 class="float-left domain_info"><?=$domain_data['Domain'];?> - <?=$domain_data['Vertical']?> - <?=$domain_data['Country']?> - <?=$domain_data['Language']?></h2>
+		<a class="view_task ready active_goal" data-fixed="fixed" data-domain="<?=$domain_data['Domain']?>" href="#">View</a>
+		<h2 class="float-left domain_info"><?=$domain_data['Domain'];?> - <?=$domain_data['Vertical']?> - <?=$domain_data['Country']?> - <?=$domain_data['Language']?> - Wireframe: <?=$domain_data['Wireframe'];?></h2>
 	</div>
 	<?php } $counter++; }
 }
@@ -136,6 +136,10 @@ switch ($permissions) {
 		echo '</div>';
 		break;
 	case 'Support':
+		echo '<div class="task_box"><h2 class="write_review">Re-Clone Tasks</h2>';
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00' AND Developer!=''";
+		my_proccess_support($mysqli, $query, $fullname, $fulldate);
+		echo '</div>';
 		echo '<div class="task_box"><h2 class="write_review">Clone Tasks</h2>';
 		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00'";
 		my_proccess_support($mysqli, $query, $fullname, $fulldate);

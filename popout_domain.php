@@ -67,6 +67,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 			<p>Country: <strong><?=$domain_data['Country'];?></strong></p>
 			<p>Language: <strong><?=$domain_data['Language'];?></strong></p>
 			<p>Wireframe: <strong><?=$domain_data['Wireframe'];?></strong></p>
+			<p>Outsourced? <select id="outsourced" name="outsourced"><option value="Yes">Yes</option><option value="No">No</option></select></p>
 			<p><a id="assign_writer" href="javascript:void(0);">Assign To Writer</a><a id="assign_admin" href="javascript:void(0);">Assign To Admin</a></p>
 			<p id="writerlist" style="display: none;"><?php  users_list($mysqli, 'Writer', $fullname);?></p>
 			<p id="adminlist" style="display: none;"><?php  users_list($mysqli, 'Content', $fullname);?></p>
@@ -91,6 +92,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 				<p>Country: <strong><?=$domain_data['Country'];?></strong></p>
 				<p>Language: <strong><?=$domain_data['Language'];?></strong></p>
 				<p>Wireframe: <strong><?=$domain_data['Wireframe'];?></strong></p>
+				<p>Outsourced: <strong><?=$domain_data['Outsourced'];?></strong></p>
 				<?php if(!empty($domain_data['ReviewNotes'])){
 					?><p>Rejection Details: <?=$domain_data['ReviewNotes'];?></p><?php
 				} ?>
@@ -116,6 +118,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 				<p>Language: <strong><?=$domain_data['Language'];?></strong></p>
 				<p>Wireframe: <strong><?=$domain_data['Wireframe'];?></strong></p>
 				<p>Writer: <strong><?=$domain_data['Writer'];?></strong></p>
+				<p>Outsourced: <strong><?=$domain_data['Outsourced'];?></strong></p>
 				<input type="hidden" name="reviewed" value="reviewed">
 				<input type="hidden" name="writer" value="<?=$domain_data['Writer'];?>">
 				<p><label for="date_submitted">Date Completed: </label>
@@ -249,9 +252,14 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 }?>
 	<div class="buttons">
 	<?php if($writing != 'Writing'){ ?>
-		<a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
-	<?php } ?>
+		<a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" class="return_support">Send To Support</a><a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
+	<?php } 
+	if ($_GET['fixed'] != 'fixed'){
+	?>
 		<button class="popout_button">Submit</button>
+	<?php } else {
+		?><button class="fixed_return">Return To Dev</button><?php 
+	} ?>
 	</div>
 	</form>
 <?php }

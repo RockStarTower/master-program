@@ -1102,11 +1102,12 @@ $(document).ready(function(){
 	$(document).on('click', '.view_task', function() {
 		var domain = $(this).data('domain');
 		var write = $(this).data('writing');
+		var fixed = $(this).data('fixed');
 		$('#popout_wrap').show();
 		$.ajax({
 			url: 'popout_domain.php',
 			type: "GET",
-			data: ({domain: domain, writing: write}),
+			data: ({domain: domain, writing: write, fixed: fixed}),
 			success: function(data){
 				$("#popout_box").html(data);
 				$('#reviewp').show();
@@ -1125,20 +1126,6 @@ $(document).ready(function(){
 			data: ({domain: domain, writing: write}),
 			success: function(data){
 				$("#popout_box").html(data);
-			}
-		});
-	});
-	//Send Back To Queue my_tasks.php
-	$(document).on('click', '.popout_return', function() {
-		var domain = $(this).data('domain');
-		var permissions = $(this).data('permissions');
-		$.ajax({
-			url: 'return_process.php',
-			type: "POST",
-			data: ({domain: domain, user_permissions: permissions}),
-			success: function(data){
-				$('#popout_wrap').hide();
-				$(".page-wrap").load('my_tasks.php .page-wrap');
 			}
 		});
 	});
@@ -1187,6 +1174,46 @@ $(document).ready(function(){
 	//		}
 	//	});
 	//});
+	//Send Back To Queue my_tasks.php
+	$(document).on('click', '.popout_return', function() {
+		var domain = $(this).data('domain');
+		var permissions = $(this).data('permissions');
+		$.ajax({
+			url: 'return_process.php',
+			type: "POST",
+			data: ({domain: domain, user_permissions: permissions}),
+			success: function(data){
+				$('#popout_wrap').hide();
+				$(".page-wrap").load('my_tasks.php .page-wrap');
+			}
+		});
+	});
+	//Send Back To Support my_tasks.php
+	$(document).on('click', '.return_support', function() {
+		var domain = $(this).data('domain');
+		$.ajax({
+			url: 'return_support.php',
+			type: "POST",
+			data: ({domain: domain}),
+			success: function(data){
+				$('#popout_wrap').hide();
+				$(".page-wrap").load('my_tasks.php .page-wrap');
+			}
+		});
+	});
+	//Send Back To Dev when fixed my_tasks.php
+	$(document).on('click', '.fixed_return', function() {
+		var domain = $(this).data('domain');
+		$.ajax({
+			url: 'return_dev.php',
+			type: "POST",
+			data: ({domain: domain}),
+			success: function(data){
+				$('#popout_wrap').hide();
+				$(".page-wrap").load('my_tasks.php .page-wrap');
+			}
+		});
+	});
 	//FOR THE GOALS POPOUT
 	$(document).on('click', '.popout', function() {
 		var vertical = $(this).data('vertical');
