@@ -748,6 +748,10 @@ switch ($permissions) {
 		$role = 'ContentFinished';
 		$user = 'Writer';
 		break;
+	case 'Writer':
+		$role = 'ContentFinished';
+		$user = 'Writer';
+		break;		
 	case 'Designer':
 		$role = 'DesignFinish';
 		$user = 'Designer';
