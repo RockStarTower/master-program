@@ -9,6 +9,9 @@ else {
 $viewPermissions = $_GET['Permissions'];
 }
 $teamArray = teamGoals($viewPermissions, $mysqli);
+if ($permissions == 'Support' && $_GET['Permissions'] == 'Domain') {
+	$permissions = 'Domain';
+}
 $userArray = userGoals($fullname, $permissions, $mysqli);
 $curDate = date ("Y-m-d");
 $curMonth = date('m');
