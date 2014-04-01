@@ -55,7 +55,7 @@
 		$('#deselectall').click(function(){
 			$('.bulkcheckbox').prop('checked', false);
 		});
-		$('body').append('<img id="tie" src="images/tiefighter.png" />'); 
+		$('body').append('<img id="tie" src="images/bunny.png" />'); 
 		function flyTie(){
 		 tie.css('left', startPos);
 		 tie.animate({left: -500}, 7000, 'linear')
