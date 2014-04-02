@@ -237,7 +237,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 			<?php if($domain_data['Type'] == 'Article'){ ?>
 				<option value="Article">Article</option>
 				<option value="Blog">Blog</option>
-			<?php } else{ ?>
+			<?php } else { ?>
 				<option value="Blog">Blog</option>
 				<option value="Article">Article</option>
 			<?php } ?>
@@ -255,8 +255,11 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 		break;
 }?>
 	<div class="buttons">
-	<?php if($writing != 'Writing'){ ?>
-		<a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" class="return_support">Send To Support</a><a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
+	<?php if ($permissions == 'Admin'){
+		?><a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" class="return_support">Send To Support</a><?php
+	}
+	if($writing != 'Writing'){ ?>
+		<a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
 	<?php } 
 	if (!isset($_GET['fixed'])){
 	?>
