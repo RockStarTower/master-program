@@ -725,11 +725,19 @@ function userGoals($fullname, $permissions, $mysqli) {
 $curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
-$beginWeek = date('d', strtotime('last sunday'));
-$endWeek = date('d', strtotime('this saturday'));
-$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+$beginWeek = date('d', strtotime('this monday'));
+$endWeek = date('d', strtotime('this friday'));
+if ((int)$beginWeek >= (int)$endWeek){
+	$weekBeginMonth = date('m', strtotime('this monday'));
+	$weekBegin = $curYear . '-' . $lastMonth . '-' . $beginWeek;
+}
+else {
+	$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+	$weekBeginMonth = date('m', strtotime('this monday'));
+}
 $weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
-$monthBegin = $curYear . '-' . $curMonth . '-01';
+
+$monthBegin = $curYear . '-' . $weekBeginMonth . '-01';
 $monthEnd = $curYear . '-' . $curMonth . '-31';
 // Declaring default value for the time counters.
 $userMonth = 0;
@@ -910,11 +918,19 @@ function teamGoals($viewPermissions, $mysqli) {
 $curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
-$beginWeek = date('d', strtotime('last sunday'));
-$endWeek = date('d', strtotime('this saturday'));
-$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+$beginWeek = date('d', strtotime('this monday'));
+$endWeek = date('d', strtotime('this friday'));
+if ((int)$beginWeek >= (int)$endWeek){
+	$weekBeginMonth = date('m', strtotime('this monday'));
+	$weekBegin = $curYear . '-' . $lastMonth . '-' . $beginWeek;
+}
+else {
+	$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+	$weekBeginMonth = date('m', strtotime('this monday'));
+}
 $weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
-$monthBegin = $curYear . '-' . $curMonth . '-01';
+
+$monthBegin = $curYear . '-' . $weekBeginMonth . '-01';
 $monthEnd = $curYear . '-' . $curMonth . '-31';
 // Merging first and last name into one variable.
 // Declaring default value for the time counters.

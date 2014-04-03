@@ -1,17 +1,22 @@
 <?php
 include("users/loginheader.php");
-$mon = date('m');
-$year = date('Y');
-$day = date('d');
 $fulldate = $year.'-'.$mon.'-'.$day;
-$curDate = date("Y-m-d");
+$curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
-$beginWeek = date('d', strtotime('last sunday'));
-$endWeek = date('d', strtotime('this saturday'));
-$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+$beginWeek = date('d', strtotime('this monday'));
+$endWeek = date('d', strtotime('this friday'));
+if ((int)$beginWeek >= (int)$endWeek){
+	$weekBeginMonth = date('m', strtotime('this monday'));
+	$weekBegin = $curYear . '-' . $lastMonth . '-' . $beginWeek;
+}
+else {
+	$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
+	$weekBeginMonth = date('m', strtotime('this monday'));
+}
 $weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
-$monthBegin = $curYear . '-' . $curMonth . '-01';
+
+$monthBegin = $curYear . '-' . $weekBeginMonth . '-01';
 $monthEnd = $curYear . '-' . $curMonth . '-31';
 $USEnglishBlogDay = $USEnglishBlogWeek = $USEnglishBlogMonth = $USEnglishBlogAll = 0; 
 $USEnglishArtDay = $USEnglishArtWeek = $USEnglishArtMonth = $USEnglishArtAll = 0;
