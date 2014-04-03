@@ -725,19 +725,9 @@ function userGoals($fullname, $permissions, $mysqli) {
 $curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
-$beginWeek = date('d', strtotime('this monday'));
-$endWeek = date('d', strtotime('this friday'));
-if ((int)$beginWeek >= (int)$endWeek){
-	$weekBeginMonth = date('m', strtotime('this monday'));
-	$weekBegin = $curYear . '-' . $lastMonth . '-' . $beginWeek;
-}
-else {
-	$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
-	$weekBeginMonth = date('m', strtotime('this monday'));
-}
-$weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
-
-$monthBegin = $curYear . '-' . $weekBeginMonth . '-01';
+$beginWeek = date("Y-m-d", strtotime('last sunday'));
+$endWeek = date("Y-m-d", strtotime('this friday'));
+$monthBegin = $curYear . '-' . $curMonth . '-01';
 $monthEnd = $curYear . '-' . $curMonth . '-31';
 // Declaring default value for the time counters.
 $userMonth = 0;
@@ -774,30 +764,39 @@ switch ($permissions) {
 		$user = 'QAInspector';
 		break;
 }
-$query = "SELECT * FROM DomainDetails WHERE $role BETWEEN '$monthBegin' AND '$monthEnd' AND $user='$fullname'";
+
+$query = "SELECT * FROM DomainDetails WHERE $role='$curDate' AND $user='$fullname'";
 $results = mysqli_query($mysqli, $query);
 $rows = mysqli_num_rows($results);
-
 /////////////~~~~~~~~
 for ($a = 0; $a < $rows; $a++){
 	mysqli_data_seek($results, $a);
 	$domain_data = mysqli_fetch_assoc($results);
 //  Setting results as incrementers. If there is a day found then it adds to day, week, & month.
-	if ($domain_data[$role] == $curDate){
 		$userDay++;
-		$userWeek++;
-		$userMonth++;
 	}
+
+$query = "SELECT * FROM DomainDetails WHERE $role BETWEEN '$beginWeek' AND '$endWeek' AND $user='$fullname'";
+$results = mysqli_query($mysqli, $query);
+$rows = mysqli_num_rows($results);
+/////////////~~~~~~~~
+for ($a = 0; $a < $rows; $a++){
+	mysqli_data_seek($results, $a);
+	$domain_data = mysqli_fetch_assoc($results);
 // Adds to the week as well as month.
-	elseif ($domain_data[$role] >= $weekBegin && $domain_data[$role] <= $weekEnd){
 		$userWeek++;
-		$userMonth++;
 	}
+
+$query = "SELECT * FROM DomainDetails WHERE $role BETWEEN '$monthBegin' AND '$monthEnd' AND $user='$fullname'";
+$results = mysqli_query($mysqli, $query);
+$rows = mysqli_num_rows($results);
+/////////////~~~~~~~~
+for ($a = 0; $a < $rows; $a++){
+	mysqli_data_seek($results, $a);
+	$domain_data = mysqli_fetch_assoc($results);
 // Adds to only the month.
-	elseif ($domain_data[$role] >= $monthBegin && $domain_data[$role] <= $monthEnd){
 		$userMonth++;
 	}
-}
 
 return array($userDay, $userWeek, $userMonth);
 }
@@ -918,19 +917,9 @@ function teamGoals($viewPermissions, $mysqli) {
 $curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
-$beginWeek = date('d', strtotime('this monday'));
-$endWeek = date('d', strtotime('this friday'));
-if ((int)$beginWeek >= (int)$endWeek){
-	$weekBeginMonth = date('m', strtotime('this monday'));
-	$weekBegin = $curYear . '-' . $lastMonth . '-' . $beginWeek;
-}
-else {
-	$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
-	$weekBeginMonth = date('m', strtotime('this monday'));
-}
-$weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
-
-$monthBegin = $curYear . '-' . $weekBeginMonth . '-01';
+$beginWeek = date("Y-m-d", strtotime('last sunday'));
+$endWeek = date("Y-m-d", strtotime('this friday'));
+$monthBegin = $curYear . '-' . $curMonth . '-01';
 $monthEnd = $curYear . '-' . $curMonth . '-31';
 // Merging first and last name into one variable.
 // Declaring default value for the time counters.
@@ -961,27 +950,33 @@ switch ($viewPermissions) {
 		$role = 'DateComplete';
 		break;
 }
-$query = "SELECT * FROM domainDetails WHERE $role BETWEEN '$monthBegin' AND '$monthEnd'";
+$query = "SELECT * FROM domainDetails WHERE `$role`= '$curDate'";
 $results = mysqli_query($mysqli, $query);
 $rows = mysqli_num_rows($results);
 for ($a = 0; $a < $rows; $a++){
 	mysqli_data_seek($results, $a);
 	$domain_data = mysqli_fetch_assoc($results);
 //  Setting results as incrementers. If there is a day found then it adds to day, week, & month.
-	if ($domain_data[$role] == $curDate){
 		$teamDay++;
-		$teamWeek++;
-		$teamMonth++;
-	}
+}
+$query = "SELECT * FROM domainDetails WHERE $role BETWEEN '$beginWeek' AND '$endWeek'";
+$results = mysqli_query($mysqli, $query);
+$rows = mysqli_num_rows($results);
+for ($a = 0; $a < $rows; $a++){
+	mysqli_data_seek($results, $a);
+	$domain_data = mysqli_fetch_assoc($results);
+//  Setting results as incrementers. If there is a day found then it adds to day, week, & month.
 // Adds to the week as well as month.
-	elseif ($domain_data[$role] >= $weekBegin && $domain_data[$role] <= $weekEnd){
 		$teamWeek++;
-		$teamMonth++;
-	}
+}
 // Adds to only the month.
-	elseif ($domain_data[$role] >= $monthBegin && $domain_data[$role] <= $monthEnd){
+$query = "SELECT * FROM domainDetails WHERE $role BETWEEN '$monthBegin' AND '$monthEnd'";
+$results = mysqli_query($mysqli, $query);
+$rows = mysqli_num_rows($results);
+for ($a = 0; $a < $rows; $a++){
+	mysqli_data_seek($results, $a);
+	$domain_data = mysqli_fetch_assoc($results);
 		$teamMonth++;
-	}
 }
 
 return array($teamDay, $teamWeek, $teamMonth);
