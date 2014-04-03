@@ -3,12 +3,7 @@
 include 'users/loginheader.php';
 
 $curDate = date ("Y-m-d");
-$curMonth = date('m');
-$curYear = date('Y');
-$beginWeek = date('d', strtotime('last sunday'));
-$endWeek = date('d', strtotime('this saturday'));
-$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
-$weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
+
 $permissions1 = $_GET['permissions'];
 
 switch ($permissions1) {
