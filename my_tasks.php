@@ -147,7 +147,7 @@ switch ($permissions) {
 		break;
 	case 'Admin':
 		echo '<div class="task_box"><h2 class="write_review">Developer Tasks</h2>';
-		$query = "SELECT * FROM DomainDetails WHERE Developer='$fullname' AND DevFinish='0000-00-00'";
+		$query = "SELECT * FROM DomainDetails WHERE Developer='$fullname' AND DevStart!='0000-00-00' AND DevFinish='0000-00-00'";
 		my_proccess_developer($mysqli, $query, $fullname, $fulldate);
 		echo '</div>';
 		break;
