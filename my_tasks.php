@@ -137,11 +137,11 @@ switch ($permissions) {
 		break;
 	case 'Support':
 		echo '<div class="task_box"><h2 class="write_review">Re-Clone Tasks</h2>';
-		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00' AND Developer!=''";
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND Developer!=''";
 		my_proccess_support($mysqli, $query, $fullname, $fulldate);
 		echo '</div>';
 		echo '<div class="task_box"><h2 class="write_review">Clone Tasks</h2>';
-		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00'";
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00' AND Developer=''";
 		my_proccess_support($mysqli, $query, $fullname, $fulldate);
 		echo '</div>';
 		break;

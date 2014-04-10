@@ -865,7 +865,16 @@ switch ($permissions) {
 		}
 		break;
 	case 'Support':
-		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00'";
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND CloneFinished='0000-00-00' AND DevStart='0000-00-00' AND Developer=''";
+		$results = mysqli_query($mysqli, $query);
+		$rows = mysqli_num_rows($results);
+		
+		for ($i = 0; $i < $rows; $i++){
+			mysqli_data_seek($results, $i);
+			$domain_data = mysqli_fetch_assoc($results);
+			$counter++;
+		}
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND Developer!=''";
 		$results = mysqli_query($mysqli, $query);
 		$rows = mysqli_num_rows($results);
 		

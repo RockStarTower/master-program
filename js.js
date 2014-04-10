@@ -1243,15 +1243,27 @@ $(document).ready(function(){
 	//Send Back To Support my_tasks.php
 	$(document).on('click', '.return_support', function() {
 		var domain = $(this).data('domain');
-		$.ajax({
-			url: 'return_support.php',
-			type: "POST",
-			data: ({domain: domain}),
-			success: function(data){
-				$('#popout_wrap').hide();
-				$(".page-wrap").load('my_tasks.php .page-wrap');
-			}
-		});
+		var date = $(this).data('date');
+		var name = $(this).data('name');
+		var note = prompt('Enter Send Back Note:');
+		if(note){
+			$.ajax({
+				url: 'add_note.php',
+				type: "GET",
+				data: ({domain: domain, name: name, date: date, note: note}),
+				success: function(data){
+					$.ajax({
+						url: 'return_support.php',
+						type: "POST",
+						data: ({domain: domain}),
+						success: function(data){
+							$('#popout_wrap').hide();
+							$(".page-wrap").load('my_tasks.php .page-wrap');
+						}
+					});
+				}
+			});
+		}
 	});
 	//Send Back To Dev when fixed my_tasks.php
 	$(document).on('click', '.fixed_return', function() {
