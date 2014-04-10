@@ -1295,6 +1295,22 @@ $(document).ready(function(){
 			}
 		});
 	});
+	//FOR THE Assigned popout Goals.php
+	$(document).on('click', '.popout_assigned', function() {
+		var vertical = $(this).data('vertical');
+		var country = $(this).data('country');
+		var language = $(this).data('language');
+		var permissions = $(this).data('permissions');
+		$('#popout_wrap').show();
+		$.ajax({
+			url: 'partials/popout_assigned.php',
+			type: "GET",
+			data: ({vertical: vertical, country: country, language: language, permissions: permissions}),
+			success: function(data){
+				$("#popout_box").html(data);
+			}
+		});
+	});
 	//GOALS POPOUT CLAIM BUTTON
 	$(document).on('click', '.claim_button', function() {
 		var username = $(this).data('username');
