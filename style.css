@@ -2046,7 +2046,7 @@ font-size: 15px;
 	margin-right: 3px;
 }
 /*Space Background Changes*/
-canvas {
+#spacejs {
 	position: fixed;
 	display: block;
 	-moz-opacity: 0.3;

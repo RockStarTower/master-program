@@ -12,6 +12,7 @@ include 'functions.php';
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="<?=root_url();?>Chart.js"></script>
 <script type="text/javascript" src="<?=root_url();?>js.js"></script>
 <script type="text/javascript" src="<?=root_url();?>space.js"></script>
 <script type="text/javascript">
@@ -29,7 +30,7 @@ echo autocompleteRegistrarList();
 </script>
 </head>
 <body>
-<canvas></canvas>
+<canvas id="spacejs"></canvas>
 <div id="page-wrap">
 <div id="header-wrapper">
 	<img id="logo_small" src="<?=root_url();?>images/Darth-Serverus-Logo_small.png" />
