@@ -1,7 +1,7 @@
 <?php
 include 'users/loginheader.php';
 include 'header.php';
-
+if(login_check($mysqli) == true) {
 if( ! isset($_GET['Permissions'])){
 $viewPermissions = $permissions;
 }
@@ -57,7 +57,7 @@ rsort($dateof);
 		</select>
 	<input type="submit" value="View Goals">
 </form>
-
+<input type="text" id="filter" class="goalsFilter" placeholder="Filter Goals" />
 <?php
 
 //take the week posted from the submission page and update the database
@@ -194,7 +194,7 @@ for ($a = 0; $a < $rows; $a++){
 ?>
 
 <h1 class="goalsh1"><?php echo $title?> Goals</h1>
-<table class="goals" <?php if ($viewPermissions == 'Content'){echo 'style="width:85%;"';}?>>
+<table class="goals" id="goalsTable"<?php if ($viewPermissions == 'Content'){echo 'style="width:85%;"';}?>>
 	<tr>
 		<th><h2>Vertical</h2></th>
 		<th><h2>Country</h2></th>
@@ -220,7 +220,7 @@ $blog = '';
 		unset($goals[0][$i]);
 	}
 	else {
-		echo '<tr>';
+		echo '<tr class="goalslist">';
 		echo '<td>'.$goals[0][$i]['Vertical'].'</td>';
 		echo '<td>'.$goals[0][$i]['Country'].'</td>';
 		echo '<td>'.$goals[0][$i]['Language'].'</td>';
@@ -229,7 +229,7 @@ $blog = '';
 		}
 		echo '<td>'.$goals[0][$i]['DateWaiting'].'</td>';
 		echo '<td>'.$goals[0][$i]['Goal'].'</td>';
-		if($viewPermissions != 'Domain') {echo '<td>'.$goals[0][$i]['Assigned'].'</td>';}
+		if($viewPermissions != 'Domain') {$assigned = ($goals[0][$i]['Assigned'] != '0') ? '<td><a class="popout_assigned" href="javascript:void(0);" data-vertical="'.$goals[0][$i]['Vertical'].'" data-country="'.$goals[0][$i]['Country'].'" data-language="'.$goals[0][$i]['Language'].'" data-permissions="'.$permissions.'">'.$goals[0][$i]['Assigned'].'</a></td>' : '<td>'.$goals[0][$i]['Assigned'].'</td>'; echo $assigned;}
 		if($permissions == 'Content' && $viewPermissions == 'Content') {echo '<td>'.$goals[0][$i]['Assigned2'].'</td>';}
 		if($viewPermissions == $permissions && $goals[0][$i]['InProcess'] != 0) {
 		echo '<td><p class="ready active_goal"><a href="javascript:void(0);" class="popout active_goal" '.$blog.' data-vertical="'.$goals[0][$i]['Vertical'].'" data-country="'.$goals[0][$i]['Country'].'" data-language="'.$goals[0][$i]['Language'].'" data-permissions="'.$permissions.'" >'.$goals[0][$i]['InProcess'].' Ready</a><p></td>';
@@ -278,7 +278,9 @@ $blog = '';
 	</div>
 </div>
 <?php
-
+} else {
+	header('Location: user/login.php');
+}
 include 'footer.php';
 
 ?>

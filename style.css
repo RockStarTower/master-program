@@ -1667,9 +1667,9 @@ div.claimed {
 }
 #filter {
 	width: 400px;
-	height: 50px;
-	font-size: 30px;
-	display: inline-block;
+	height: 30px;
+	font-size: 25px;
+	display: block;
 }
 .design_content {
 	padding: 65px 25px;
@@ -2191,6 +2191,11 @@ body {
     border-bottom-left-radius: 5px;
 }
 /*Goals styles*/
+.goalsFilter {
+	float: right;
+	margin-right: 3px;
+	height: 25px !important;
+}
 .goals th {
     text-align: left;
 }
@@ -2239,6 +2244,9 @@ body {
     background: rgba(42,57,75,1);
     padding: 5px;
     border-radius: 5px;
+}
+.popout_assigned {
+	color: #E4E6EC;
 }
 #popout_goals {
     margin: 10px;

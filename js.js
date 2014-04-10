@@ -946,18 +946,36 @@ $(document).ready(function(){
         var filter = $(this).val(), count = 0;
  
         // Loop through the comment list
-        $(".commentlist .design_content").each(function(){
- 
-            // If the list item does not contain the text phrase fade it out
-            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                $(this).fadeOut();
- 
-            // Show the list item if the phrase matches and increase the count by 1
-            } else {
-                $(this).show();
-                count++;
-            }
-        });
+        var userlist = $('.userlist');
+        var goalslist = $('.goalslist');
+        if(userlist){
+        	$(".userlist").each(function(){
+ 	
+        	    // If the list item does not contain the text phrase fade it out
+        	    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        	        $(this).fadeOut();
+ 	
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        $(this).show();
+        	        count++;
+        	    }
+       		});
+    	}
+    	if(goalslist){
+        	$(".goalslist").each(function(){
+ 	
+        	    // If the list item does not contain the text phrase fade it out
+        	    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        	        $(this).fadeOut();
+ 	
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        $(this).show();
+        	        count++;
+        	    }
+        	});
+        }
  
         // Update the count
         var numberItems = count;
