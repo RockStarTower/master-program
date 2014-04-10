@@ -1,5 +1,5 @@
 <?php
-include 'users/loginheader.php';
+include '../users/loginheader.php';
 
 $domain = $_GET['domain'];
 if(isset($_GET['writing'])){

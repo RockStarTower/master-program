@@ -1,6 +1,6 @@
 <?php
 
-include 'users/loginheader.php';
+include '../users/loginheader.php';
 
 $curDate = date ("Y-m-d");
 

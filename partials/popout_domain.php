@@ -1,7 +1,7 @@
 <?php
-include 'users/loginheader.php';
-include 'functions.php';
-include 'config.php';
+include '../users/loginheader.php';
+include '../functions.php';
+include '../config.php';
 
 $domain = $_GET['domain'];
 if(isset($_GET['fixed']) && !empty($_GET['fixed'])){
@@ -55,6 +55,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 
 	$result = mysqli_query($mysqli, $query);
 	$domain_data = mysqli_fetch_assoc($result);
+	$domain_data['DomainNotes'] = stripslashes($domain_data['DomainNotes']);
 ?>
 	<form action="" method="post" id="popout_task">
 	<input type="hidden" name="domain" value="<?=$domain_data['Domain'];?>">
@@ -256,7 +257,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 }?>
 	<div class="buttons">
 	<?php if ($permissions == 'Admin'){
-		?><a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" class="return_support">Send To Support</a><?php
+		?><a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" class="return_support">Send To Support</a><?php
 	}
 	if($writing != 'Writing'){ ?>
 		<a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
