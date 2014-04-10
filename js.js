@@ -1139,7 +1139,7 @@ $(document).ready(function(){
 		var fixed = $(this).data('fixed');
 		$('#popout_wrap').show();
 		$.ajax({
-			url: 'popout_domain.php',
+			url: 'partials/popout_domain.php',
 			type: "GET",
 			data: ({domain: domain, writing: write, fixed: fixed}),
 			success: function(data){
@@ -1155,7 +1155,7 @@ $(document).ready(function(){
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
-			url: 'popout_domain.php',
+			url: 'partials/popout_domain.php',
 			type: "GET",
 			data: ({domain: domain, writing: write}),
 			success: function(data){
@@ -1170,7 +1170,7 @@ $(document).ready(function(){
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
-			url: 'popout_history.php',
+			url: 'partials/popout_history.php',
 			type: "GET",
 			data: ({domain: domain, writing: writing}),
 			success: function(data){
@@ -1185,7 +1185,7 @@ $(document).ready(function(){
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
-			url: 'popout_ftpcpanel.php',
+			url: 'partials/popout_ftpcpanel.php',
 			type: "GET",
 			data: ({domain: domain, writing: writing}),
 			success: function(data){
@@ -1257,7 +1257,7 @@ $(document).ready(function(){
 		var blog = $(this).data('blog');
 		$('#popout_wrap').show();
 		$.ajax({
-			url: 'popout_goals.php',
+			url: 'partials/popout_goals.php',
 			type: "GET",
 			data: ({vertical: vertical, country: country, language: language, permissions: permissions, blog: blog}),
 			success: function(data){
