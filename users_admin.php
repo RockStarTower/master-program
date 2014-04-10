@@ -1,5 +1,6 @@
 <div class="page-wrap">
 <div class="adminwrapper">
+<input type="text" id="filter" placeholder="Filter Users">
 	<div class="content">
 		<div id="user_databasediv" class="user_database">
 		<?php
@@ -17,7 +18,7 @@
 		print "</tr>";
 		// display data
 		foreach ($arrValues as $row){
-		    print "<tr>";
+		    print "<tr class='userlist'>";
 		    foreach ($row as $key => $val){
 		    	if($key == 'Admin'){
 		    		if($val == 0){

@@ -27,9 +27,11 @@ $results = mysqli_query($mysqli, "SELECT * FROM Users WHERE UserID='$user_id'");
  <p>Admin:  <input type="checkbox" <?=$admin?> name="Admin" /></p>
  <p>Permissions: <select id="Permissions" name="Permissions">
 		<?php
-		foreach ($user_permission_array as $val){?>
-		<option value="<?=$val;?>"><?=$val;?></option>
-		<?php } ?>
+		echo '<option value="'.$row['Permissions'].'">'.$row['Permissions'].'</option>';
+		foreach ($user_permission_array as $val){
+			if($val != $row['Permissions']){?>
+			<option value="<?=$val;?>"><?=$val;?></option>
+		<?php } }?>
 	</select></p>
  <input type="submit" name="submit" value="Submit">
  </div>
