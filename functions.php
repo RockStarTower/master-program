@@ -912,6 +912,19 @@ function domainNotes($mysqli, $domain, $date, $fullname, $newNote){
 	mysqli_query($mysqli, $query);
 }
 
+function modifyNotes($mysqli, $domain, $date, $fullname, $oldnote, $newnote){
+	$query = "SELECT * FROM DomainDetails WHERE Domain='$domain'";
+	$result = mysqli_query($mysqli, $query);
+	$domain_data = mysqli_fetch_assoc($result);
+
+	$modifiedNote = str_replace($oldnote, $newnote, $domain_data['DomainNotes']);
+	$modifiedNote = addslashes($modifiedNote);
+	echo $modifiedNote;
+
+	$query = "UPDATE DomainDetails SET DomainNotes='$modifiedNote' WHERE Domain='$domain'";
+	mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+}
+
 function teamGoals($viewPermissions, $mysqli) {
 // Declaring time related constants and time formats. Giving the window for the time variables.
 $curDate = date ("Y-m-d");

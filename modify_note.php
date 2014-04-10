@@ -5,6 +5,7 @@ include 'functions.php';
 $domain = $_GET['domain'];
 $date = $_GET['date'];
 $fullname = $_GET['name'];
-$note = addslashes($_GET['note']);
-domainNotes($mysqli, $domain, $date, $fullname, $note);
+$newnote = $_GET['newnote'];
+$oldnote = $_GET['oldnote'];
+modifyNotes($mysqli, $domain, $date, $fullname, $oldnote, $newnote);
 ?>

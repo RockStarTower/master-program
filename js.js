@@ -1093,10 +1093,44 @@ $(document).ready(function(){
 					$('#noteSuccess').html('New Note Added!');
 					$("#noteSuccess").delay(4000).fadeOut("slow");
 					var html = $('#notes').html();
-					$('#notes').html(html+'<div class="domainNote"><p>'+name+': <span>'+date+'</span> - '+note+'</p></div>');
+					$('#notes').html(html+'<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>');
+					var html = $('#accordionNotes').html();
+					$('#accordionNotes').html(html+'<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>');
 				}
 			});
 		}
+	});
+	//Modify notes function!----------------------sweet sauce inc
+	$(document).on('dblclick', '.noteContent', function () {
+    	var oldNote = $(this).html();
+    	$(this).hide();
+    	var parent = $(this).parent();
+    	parent.append('<input type="text" id="imEditing" value="' + oldNote + '">');
+    	$(this).addClass('editingMe');
+	});
+	$(document).on('focusout', '#imEditing', function () {
+	    var newEdit = $('.editingMe');
+	    var addButton = $('#addNote');
+	    var date = addButton.data('date');
+	    var name = addButton.data('name');
+	    var domain= addButton.data('domain');
+	    var newNote = $(this).val();
+	    $(this).hide();
+	    var oldNote = newEdit.html();
+	    newEdit.show();
+	    newEdit.html(newNote);
+	    $(this).remove();
+	    if(newNote != oldNote){
+	    $.ajax({
+	        url: 'modify_note.php',
+	        type: 'GET',
+	        data: ({date: date, name: name, domain: domain, oldnote: oldNote, newnote: newNote}),
+	        success: function(data){
+	            $('#noteSuccess').html('Note Modified!');
+				$("#noteSuccess").delay(4000).fadeOut("slow");
+	        }
+	    });
+	    }
 	});
 	//Pop out for claimed task
 	$(document).on('click', '.view_task', function() {
