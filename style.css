@@ -2246,7 +2246,7 @@ body {
     border-radius: 5px;
 }
 .popout_assigned {
-	color: #E4E6EC;
+	color: rgba(215,141,67,1);
 }
 #popout_goals {
     margin: 10px;
