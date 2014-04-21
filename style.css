@@ -1228,6 +1228,15 @@ margin-left: -56px;
 }
 
 /*---------BULK EDIT---------*/
+.hostas {
+	width: 100%;
+}
+.hostselectall {
+    top: 10px !important;
+}
+.hostbulkedit {
+    margin-top: 20px;
+}
 .bulkhead:hover {
 	cursor: pointer;
 }

@@ -19,6 +19,12 @@ if(login_check($mysqli) == true) {
         }
         $query = $_GET['query']; 
         $field = $_GET['field'];
+
+        if($field == 'DomainDetails'){
+            $bulkeditor = 'domains';
+        } elseif($field == 'HostDetails'){
+            $bulkeditor = 'hosts';
+        }
      
         $query = explode(" ", $query);
         $query = implode("%", $query);
@@ -891,7 +897,7 @@ if($field == "DomainDetails"){
         echo '<div><a href="#" id="selectall">Bulk Select All</a></div>';
                 
         // display data in table
-        echo '<table class="searchtable"><form id="bulksearchform" method="post" action="bulk_edit_select.php">';
+        echo '<table class="searchtable"><form id="bulksearchform" method="post" action="bulk_edit_select.php?changes='.$bulkeditor.'">';
         $headersnull = array ('HostAccount', 'Vertical', 'Type', 'Country', 'Location', 'Language');
         array_push($headersnull, $Versionheader, $prheader, $daheader, $paheader, $managewpaccountheader, $themeheader, $wireframeheader, $registrarheader, $renewaldateheader, $researchedbyheader, $developerheader, $designerheader, $domdateboughtheader, $whoisrenewalheader, $domdatecompleteheader);
         $headers =  array_filter($headersnull);
@@ -1377,9 +1383,11 @@ else {
         }
         if (isset($FilterRenewDate)){echo $FilterRenewDate;}
         if (isset($FilterDateBought)){echo $FilterDateBought;}
+
+        echo '<div><a href="#" class="hostselectall" id="selectall">Bulk Select All</a></div>';
                 
         // display data in table
-        echo '<table class="searchtable">';
+        echo '<table class="searchtable"><form id="bulksearchform" method="post" action="bulk_edit_select.php?changes='.$bulkeditor.'">';
         $headersnull = array ('Country', 'Server Locations', 'cPanel', 'FTP', 'Billing');
         array_push($headersnull, $DateBoughtheader, $Emailheader, $RenewDateheader);
         $headers =  array_filter($headersnull);
@@ -1407,7 +1415,7 @@ else {
 				$dateb = $filteredResult[1];
 				$renewd = $filteredResult[18];
                 // echo out the contents of each row into a table
-                echo '<tr class="hostaccounthead"><td><a href="host-accordion.php?HostAccount='.$ha.'">'.$ha.'</a></td></tr>';
+                echo '<tr class="hostaccounthead"><td><input class="bulkcheckbox" type="checkbox" name='.$ha.' value='.$ha.'></td><td><a href="host-accordion.php?HostAccount='.$ha.'">'.$ha.'</a></td></tr>';
                 echo '<tr class="hosttableheads">';
                 foreach ($headers as $name){
                 	echo "<th>$name</th>";
@@ -1448,6 +1456,8 @@ else {
 
         }
         // close table>
+        echo "<button class='hostbulkedit'>BULK EDIT</button>";
+        echo "</form>";
         echo "</table>";  
  
         echo "</div>"; 
