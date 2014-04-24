@@ -135,7 +135,7 @@ if($_POST['changes'] == 'domains'){
     		?><div>
 			<ul><?php
     		foreach ($filteredResult as $exiest => $value){ ?>
-    			<input name="<?=$exiest . $counter;?>" type="text" value="<?=$value;?>" />
+    			<input class="<?=$exiest?>" name="<?=$exiest . $counter;?>" type="text" value="<?=$value;?>" />
     			<input name="before<?=$exiest . $counter;?>" type="hidden" value="<?=$value;?>" />
 				<input name="field<?=$exiest . $counter;?>" type="hidden" value="<?=$exiest;?>" /><?php
     		}
