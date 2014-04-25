@@ -670,53 +670,19 @@ function json_dropdown($list, $value){
 	$value = trim($value);
 	//$list needs to be theme_list, manage_list, type_list
 	//$Value is a value pulled from the database. Pass a param even if its empty
-	$json = file_get_contents('json/'.$list.'.json');
+	$jsonPath = 'http://darth-serverus.boocorp.com/sandbox/json/'.$list.'.json';
+	$json = file_get_contents($jsonPath);
 	$json = json_decode($json, true);
 	if(!empty($value) && !in_array($value, $json)){
 		?><option value="<?=$value?>"><?=$value?> - CHANGE</option><?php
+	} elseif (!empty($value) && in_array($value, $json)){
+		?><option value="<?=$value?>"><?=$value?></option><?php
 	}
 	foreach($json as $theme){
 		?><option value="<?=$theme?>"><?=$theme?></option><?php
 	}
 }
 
-function magage_list($mysqli){
-	$query = "SELECT * FROM DomainDetails";
-	$result = mysqli_query($mysqli, $query);
-	$ManageWPAccountdupe = array();
-	while($domresults = mysqli_fetch_assoc($result)){
-		$ManageWPAccountdupe[] = $domresults['ManageWPAccount'];
-	}
-	$ManageWPAccountnull = array_unique($ManageWPAccountdupe); 
-	$ManageWPAccount =  array_filter($ManageWPAccountnull); 
-	sort($ManageWPAccount);
-	foreach($ManageWPAccount as $manage){
-		?><option value="<?=$manage?>"><?=$manage?></option><?php
-	}
-}
-function domaindatabase() {
-	$con = new mysqli('localhost', 'root', 'root', 'ecoabsor_master');
-	if (mysqli_connect_errno())	{
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-		
-	$query = "SELECT * FROM DomainDetails";
-	$result = mysqli_query($con,$query);
-	$result = mysqli_fetch_assoc($result);
-	if (!$result){
-		die('Error: ' . mysqli_error($con));
-	}
-	$counter = 0;
-	$numericalarray = array();
-	$temparray = array();
-	foreach ($result as $key => $val){
-		$temparray = array($counter => $key);
-		$numericalarray = array_merge((array)$numericalarray, (array)$temparray);
-		$counter ++;
-	}
-	print_r($numericalarray);
-	
-}
 include 'rooturl.php';
 
 
@@ -803,7 +769,7 @@ return array($userDay, $userWeek, $userMonth);
 
 function inMyQueue($mysqli, $fullname, $permissions){
 	$counter = 0;
-switch ($permissions) {
+	switch ($permissions) {
 	case 'Content':
 		$query = "SELECT * FROM DomainDetails WHERE ContentAdmin='$fullname' AND ContentStart='0000-00-00'";
 		$results = mysqli_query($mysqli, $query);
@@ -874,7 +840,7 @@ switch ($permissions) {
 			$domain_data = mysqli_fetch_assoc($results);
 			$counter++;
 		}
-		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND Developer!=''";
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND CloneFinished='0000-00-00'";
 		$results = mysqli_query($mysqli, $query);
 		$rows = mysqli_num_rows($results);
 		
@@ -885,7 +851,7 @@ switch ($permissions) {
 		}
 		break;
 	case 'Admin':
-		$query = "SELECT * FROM DomainDetails WHERE Developer='$fullname' AND DevFinish='0000-00-00'";
+		$query = "SELECT * FROM DomainDetails WHERE Developer='$fullname' AND DevFinish='0000-00-00' AND DevStart!='0000-00-00'";
 		$results = mysqli_query($mysqli, $query);
 		$rows = mysqli_num_rows($results);
 		
