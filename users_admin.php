@@ -1,6 +1,6 @@
 <div class="page-wrap">
 <div class="adminwrapper">
-<input type="text" id="filter" placeholder="Filter Users">
+<input type="text" id="filter" placeholder="Filter Users" />
 	<div class="content">
 		<div id="user_databasediv" class="user_database">
 		<?php

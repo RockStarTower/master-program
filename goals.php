@@ -57,7 +57,10 @@ rsort($dateof);
 		</select>
 	<input type="submit" value="View Goals">
 </form>
-<input type="text" id="filter" class="goalsFilter" placeholder="Filter Goals" />
+<form id="filterForm" action="" method="">
+	<input type="text" id="filter" class="goalsFilter" placeholder="Filter Goals" />
+</form>
+<div id="filters"></div>
 <?php
 
 //take the week posted from the submission page and update the database

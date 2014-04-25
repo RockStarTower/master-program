@@ -941,45 +941,215 @@
     });
 $(document).ready(function(){
     $("#filter").keyup(function(){
- 
         // Retrieve the input field text and reset the count to zero
-        var filter = $(this).val(), count = 0;
+        var filter = $(this).val();
  
         // Loop through the comment list
         var userlist = $('.userlist');
         var goalslist = $('.goalslist');
+        var inprocesslist = $('.commentlist');
+        var dashboard = $('#user_list');
+        var filteredRes = $('.filteredRes');
         if(userlist){
         	$(".userlist").each(function(){
- 	
+ 		
         	    // If the list item does not contain the text phrase fade it out
         	    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
         	        $(this).fadeOut();
- 	
+ 		
         	    // Show the list item if the phrase matches and increase the count by 1
         	    } else {
         	        $(this).show();
-        	        count++;
         	    }
        		});
     	}
-    	if(goalslist){
-        	$(".goalslist").each(function(){
- 	
+    	if(filteredRes.length >= 1){
+    		$(".filteredRes").each(function(){
+ 		
         	    // If the list item does not contain the text phrase fade it out
         	    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
         	        $(this).fadeOut();
- 	
+        	        $(this).removeClass('filtered');
+ 		
         	    // Show the list item if the phrase matches and increase the count by 1
         	    } else {
         	        $(this).show();
-        	        count++;
+        	        $(this).addClass('filtered');
+        	    }
+        	});
+    	} else if(goalslist){
+        	$(".goalslist").each(function(){
+ 		
+        	    // If the list item does not contain the text phrase fade it out
+        	    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        	        $(this).fadeOut();
+        	        $(this).removeClass('filtered');
+ 		
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        $(this).show();
+        	        $(this).addClass('filtered');
         	    }
         	});
         }
- 
-        // Update the count
-        var numberItems = count;
-        $("#filter-count").text("Domains = "+count);
+        if(filteredRes.length >= 1){
+    		$(".filteredRes").each(function(){
+    			var domainDiv = $(this).parent('.inProcessTask');
+ 		
+        	    // If the list item does not contain the text phrase fade it out
+        	    if (domainDiv.text().search(new RegExp(filter, "i")) < 0) {
+        	        domainDiv.fadeOut();
+        	        domainDiv.removeClass('filtered');
+ 		
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        domainDiv.show();
+        	        domainDiv.addClass('filtered');
+        	    }
+        	});
+    	} else if(inprocesslist){
+        	$(".domain_info").each(function(){
+        		var domainDiv = $(this).parent('.inProcessTask');
+ 	
+        	    // If the list item does not contain the text phrase fade it out
+        	    if (domainDiv.text().search(new RegExp(filter, "i")) < 0) {
+        	        domainDiv.fadeOut();
+        	        domainDiv.removeClass('filtered');
+ 	
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        domainDiv.show();
+        	        domainDiv.addClass('filtered');
+        	    }
+        	});
+        }
+        if(dashboard){
+        	$(".user_info").each(function(){
+        		var userDiv = $(this).parent('.user');
+ 	
+        	    // If the list item does not contain the text phrase fade it out
+        	    if (userDiv.text().search(new RegExp(filter, "i")) < 0) {
+        	        userDiv.fadeOut();
+ 	
+        	    // Show the list item if the phrase matches and increase the count by 1
+        	    } else {
+        	        userDiv.show();
+        	    }
+        	});
+        }
+    });
+    //Create multi filter system for the live filter
+    $("#filterForm").submit(function(e){
+    	e.preventDefault();
+    	var newFilter = $('#filter').val();
+    	var filters = $('#filters');
+    	var filtersHtml = filters.html();
+
+    	filters.html(filtersHtml+'<span class="filterText">'+newFilter+' <a class="newFilter" href="javascript:void(0);"></a></span>');
+    	
+    	$(".filteredRes").each(function(){
+            $(this).removeClass('filteredRes');
+        });
+    	$(".filtered").each(function(){
+    		$(this).removeClass('filtered');
+            $(this).addClass('filteredRes');
+        });
+        $('#filter').val('');
+    });
+    //Delete filter on live filter
+    $(document).on('click', ('.newFilter'), function(){
+    	$(this).parent('.filterText').remove();
+
+    	var userlist = $('.userlist');
+        var goalslist = $('.goalslist');
+        var inprocesslist = $('.commentlist');
+        var dashboard = $('#user_list');
+        var filteredRes = $('.filteredRes');
+
+    	if($('#filters').children().length >= 1){
+    	$('.filterText').each(function(){
+
+    		var remaining = $.trim($(this).text());
+
+        	userlist.removeClass('filtered');
+    		userlist.removeClass('filteredRes');
+    		goalslist.removeClass('filtered');
+    		goalslist.removeClass('filteredRes');
+    		inprocesslist.removeClass('filtered');
+    		inprocesslist.removeClass('filteredRes');
+    		dashboard .removeClass('filtered');
+    		dashboard .removeClass('filteredRes');
+
+        	if(userlist){
+        		$(".userlist").each(function(){
+ 			
+        		    if ($(this).text().search(new RegExp(remaining, "i")) < 0) {
+        	    		$(this).fadeOut();
+ 		
+        			// Show the list item if the phrase matches and increase the count by 1
+        			} else {
+        			    $(this).show();
+        			    $(this).addClass('filteredRes');
+        			}
+       			});
+    		}
+    		if(goalslist){
+        		$(".goalslist").each(function(){
+ 			
+        		    if ($(this).text().search(new RegExp(remaining, "i")) < 0) {
+        	    		$(this).fadeOut();
+ 		
+        			// Show the list item if the phrase matches and increase the count by 1
+        			} else {
+        			    $(this).show();
+        			    $(this).addClass('filteredRes');
+        			}
+        		});
+        	}
+        	if(inprocesslist){
+        		$(".domain_info").each(function(){
+        			var domainDiv = $(this).parent('.inProcessTask');
+ 		
+        		    if (domainDiv.text().search(new RegExp(remaining, "i")) < 0) {
+        	    		domainDiv.fadeOut();
+ 		
+        			// Show the list item if the phrase matches and increase the count by 1
+        			} else {
+        			    domainDiv.show();
+        			    domainDiv.addClass('filteredRes');
+        			}
+        		});
+        	}
+        	if(dashboard){
+        		$(".user_info").each(function(){
+        			var userDiv = $(this).parent('.user');
+ 		
+        		    if (userDiv.text().search(new RegExp(remaining, "i")) < 0) {
+        	    		userDiv.fadeOut();
+ 		
+        			// Show the list item if the phrase matches and increase the count by 1
+        			} else {
+        			    userDiv.show();
+        			    userDiv.addClass('filteredRes');
+        			}
+        		});
+        	}
+    	});
+		} else {
+			userlist.removeClass('filtered');
+    		userlist.removeClass('filteredRes');
+    		goalslist.removeClass('filtered');
+    		goalslist.removeClass('filteredRes');
+    		inprocesslist.children().removeClass('filtered');
+    		inprocesslist.children().removeClass('filteredRes');
+    		dashboard.children().removeClass('filtered');
+    		dashboard.children().removeClass('filteredRes');
+
+    		userlist.show();
+    		goalslist.show();
+    		inprocesslist.children().show();
+    		dashboard.children().show();
+		}
     });
 
     //Domain CSV Replacement functions
