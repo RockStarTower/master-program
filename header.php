@@ -61,6 +61,7 @@ echo autocompleteRegistrarList();
 			<!-- New Design Change -->
 			<li><a href="<?=root_url();?>live_numbers.php">Live Numbers</a></li>
 			<li><a href="<?=root_url();?>goals.php">Goals</a></li>
+			<li><a href="<?=root_url();?>in_process.php">In Process</a></li>
 			
 			<!--<li><a href="goals.php">Goals</a></li>-->
 			<!-- End New Design Change -->
