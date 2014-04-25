@@ -7,6 +7,11 @@ if(isset($_GET['writing'])){
 } else {
 	$writing = '';
 }
+if(isset($_GET['fixed']) && !empty($_GET['fixed'])){
+	$fixed = 'data-fixed="'.$_GET['fixed'].'"';
+} else {
+	$fixed = '';
+}
 $query = "SELECT * FROM DomainDetails WHERE Domain='$domain'";
 
 	$mon = date('m');
@@ -20,7 +25,7 @@ $query = "SELECT * FROM DomainDetails WHERE Domain='$domain'";
 ?>
 <div id="popout_task">
 	<p class="popout_domain"><a href="domain-accordion.php?DomainName=<?=$domain_data['Domain']?>&HostAccount=<?=$domain_data['HostAccount']?>"><strong><?=$domain_data['Domain'];?></strong></a></p>
-	<p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" <?=$writing?> href="javascript:void(0);" class="tab tab_task">Task Info</a></p><p class="tab_back  tab_active"><a data-domain="<?=$domain_data['Domain']?>" href="	javascript:void(0);" class="tab tab_history">Build History</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" href="javascript:void(0);" class="tab tab_ftpcpanel">FTP/cPanel</a></p><?php //<a href="javascript:void(0);" class="tab">Content</a>?>
+	<p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" <?=$writing?> <?=$fixed?> href="javascript:void(0);" class="tab tab_task">Task Info</a></p><p class="tab_back  tab_active"><a data-domain="<?=$domain_data['Domain']?>" <?=$fixed?> href="	javascript:void(0);" class="tab tab_history">Build History</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>"  <?=$fixed?> href="javascript:void(0);" class="tab tab_ftpcpanel">FTP/cPanel</a></p><?php //<a href="javascript:void(0);" class="tab">Content</a>?>
 	<div class="view_box">
 		<table>
 			<tbody>

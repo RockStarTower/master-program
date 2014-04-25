@@ -67,9 +67,10 @@ function my_proccess_support($mysqli, $query, $fullname, $fulldate){
 	for ($i = 0; $i < $rows; $i++){
 	mysqli_data_seek($results, $i);
 	$domain_data = mysqli_fetch_assoc($results);
+	$fixed = ($domain_data['Developer'] != '' && strtotime($domain_data['DevStart']) == false ? 'data-fixed="fixed"' : '');
 	if ($domain_data['Domain'] !== ''){
 	?><div class="my_task">
-		<a class="view_task ready active_goal" data-fixed="fixed" data-domain="<?=$domain_data['Domain']?>" href="#">View</a>
+		<a class="view_task ready active_goal" <?=$fixed?> data-domain="<?=$domain_data['Domain']?>" href="#">View</a>
 		<h2 class="float-left domain_info"><?=$domain_data['Domain'];?> - <?=$domain_data['Vertical']?> - <?=$domain_data['Country']?> - <?=$domain_data['Language']?> - Wireframe: <?=$domain_data['Wireframe'];?></h2>
 	</div>
 	<?php } $counter++; }

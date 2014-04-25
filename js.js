@@ -1095,6 +1095,7 @@ $(document).ready(function(){
 	$(document).on('click', '.close_popout', function() {
 		$('#popout_wrap').hide('fade');
 		window.location.reload();
+		
 	});
 	//Add Note Function-------------------------------------
 	$(document).on('click', '#addNote', function() {
@@ -1170,12 +1171,13 @@ $(document).ready(function(){
 	$(document).on('click', '.tab_task', function() {
 		var domain = $(this).data('domain');
 		var write = $(this).data('writing');
+		var fixed = $(this).data('fixed');
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
 			url: 'partials/popout_domain.php',
 			type: "GET",
-			data: ({domain: domain, writing: write}),
+			data: ({domain: domain, writing: write, fixed: fixed}),
 			success: function(data){
 				$("#popout_box").html(data);
 			}
@@ -1185,12 +1187,13 @@ $(document).ready(function(){
 	$(document).on('click', '.tab_history', function() {
 		var domain = $(this).data('domain');
 		var writing = $(this).data('writing');
+		var fixed = $(this).data('fixed');
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
 			url: 'partials/popout_history.php',
 			type: "GET",
-			data: ({domain: domain, writing: writing}),
+			data: ({domain: domain, writing: writing, fixed: fixed}),
 			success: function(data){
 				$("#popout_box").html(data);
 			}
@@ -1200,12 +1203,13 @@ $(document).ready(function(){
 	$(document).on('click', '.tab_ftpcpanel', function() {
 		var domain = $(this).data('domain');
 		var writing = $(this).data('writing');
+		var fixed = $(this).data('fixed');
 		$('#popout_wrapper').removeClass('full_page');
 		$('#popout_wrap').show();
 		$.ajax({
 			url: 'partials/popout_ftpcpanel.php',
 			type: "GET",
-			data: ({domain: domain, writing: writing}),
+			data: ({domain: domain, writing: writing, fixed: fixed}),
 			success: function(data){
 				$("#popout_box").html(data);
 			}

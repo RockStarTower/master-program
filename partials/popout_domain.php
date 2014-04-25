@@ -4,11 +4,6 @@ include '../functions.php';
 include '../config.php';
 
 $domain = $_GET['domain'];
-if(isset($_GET['fixed']) && !empty($_GET['fixed'])){
-	$fixed = $_GET['fixed'];
-} else {
-	$fixed = '';
-}
 
 switch ($permissions) {
 	case 'Content':
@@ -48,6 +43,12 @@ $query = "SELECT * FROM DomainDetails WHERE $queryname='$fullname' AND Domain='$
 load_domain($mysqli, $query, $fullname, $permissions, $writing);
 
 function load_domain($mysqli, $query, $fullname, $permissions, $writing){
+
+	if(isset($_GET['fixed']) && !empty($_GET['fixed'])){
+		$fixed = 'data-fixed="fixed"';
+	} else {
+		$fixed = '';
+	}
 	$mon = date('m');
 	$year = date('Y');
 	$day = date('d');
@@ -167,7 +168,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 	case 'Support':
 		?>
 	<p class="popout_domain"><a href="domain-accordion.php?DomainName=<?=$domain_data['Domain']?>&HostAccount=<?=$domain_data['HostAccount']?>" target="_blank"><strong><?=$domain_data['Domain'];?></strong></a></p>
-	<p class="tab_back tab_active"><a data-domain="<?=$domain_data['Domain']?>" href="javascript:void(0);" class="tab tab_task">Task Info</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" href="javascript:void(0);" class="tab tab_history">Build History</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" href="javascript:void(0);" class="tab tab_ftpcpanel">FTP/cPanel</a></p>
+	<p class="tab_back tab_active"><a data-domain="<?=$domain_data['Domain']?>" href="javascript:void(0);" class="tab tab_task">Task Info</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" <?=$fixed?> href="javascript:void(0);" class="tab tab_history">Build History</a></p><p class="tab_back"><a data-domain="<?=$domain_data['Domain']?>" <?=$fixed?> href="javascript:void(0);" class="tab tab_ftpcpanel">FTP/cPanel</a></p>
 	<div class="view_box">
 		<div id="data_section">
 			<p>Vertical: <strong><?=$domain_data['Vertical'];?></strong></p>
@@ -184,13 +185,13 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 			<?php json_dropdown('manage_list');?>
 			</select></p>
 			<p><label for="databasename">Database Name: </label>
-			<input required id="databasename" type="text" placeholder="Database Name" name="databasename"></p>
+			<input required id="databasename" type="text" placeholder="Enter DB Name..." name="databasename" value="<?=$domain_data['DBName']?>"></p>
 			<p><label for="databaseuser">Database User: </label>
-			<input required id="databaseuser" type="text" placeholder="Database User" name="databaseuser"></p>
+			<input required id="databaseuser" type="text" placeholder="Enter DB User..." name="databaseuser" value="<?=$domain_data['DBUser']?>"></p>
 			<p><label for="databasepw">Database Password: </label>
-			<input required id="databasepw" type="text" placeholder="Database Password" name="databasepw"></p>
+			<input required id="databasepw" type="text" placeholder="Enter DB Password..." name="databasepw" value="<?=$domain_data['DBPass']?>"></p>
 			<p><label for="databasehost">Database Host: </label>
-			<input required id="databasehost" type="text" placeholder="Database Host" name="databasehost"></p>
+			<input required id="databasehost" type="text" placeholder="Enter DB Host..." name="databasehost" value="<?=$domain_data['DBHost']?>"></p>
 			<p><label for="date_submitted">Date Completed: </label>
 			<input type="date" name="date_submitted" value="<?=$fulldate;?>"></p>
 		</div>
@@ -266,7 +267,7 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 	?>
 		<button class="popout_button">Submit</button>
 	<?php } else {
-		?><button class="fixed_return">Return To Dev</button><?php 
+		?><a href="javascript:void(0)" data-domain="<?=$domain_data['Domain']?>" class="fixed_return">Return To Dev</a><?php 
 	} ?>
 	</div>
 	</form>
