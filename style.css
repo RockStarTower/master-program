@@ -1680,35 +1680,37 @@ div.claimed {
 	font-size: 25px;
 	display: block;
 }
-.design_content {
-	padding: 65px 25px;
-	padding-bottom: 25px;
-	font-size: 45px;
-	border: 1px solid;
-	line-height: 0px;
+.inProcessFilters {
+	float: none !important;
+	display:inline;
 }
-
-.design_content p {
-	margin-top: -20px;
+div.inProcessTask {
+    width: 100%;
+    display: block;
+    height: 35px;
 }
-.design_content a{
-	text-decoration: none;
-	color: #fff;
-	background: #000;
-	border-radius: 5px;
-	padding: 10px;
+div.inProcessTask:hover {
+    background: rgba(215,141,67,.5);
 }
-.design_content button {
-	text-decoration: none;
-	color: #fff;
-	background: #000;
-	border-radius: 5px;
-	padding: 10px;
-	margin-top: -45px;
+.inProcessTask .claim_button {
+    margin-top: .2em;
+    margin-right: 10px;
+}
+.inProcessTask .domain_info {
+    line-height: 33px;
+    margin-left: 10px;
+}
+.inProcessFilter {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: inline !important;
 }
 .domain_info {
 	font-size: 22px;
 	line-height: 26px;
+}
+.domain_info a {
+    color: #D78D43;
 }
 #live-search {
 text-align: center;
@@ -1871,7 +1873,7 @@ text-align: center;
 	color: #fff;
 }
 
-.popout_button, .popout_return, .return_support {
+.popout_button, .popout_return, .return_support, .fixed_return {
     margin: 10px 0;
     border-radius: 5px;
     background: rgba(215,141,67,1);
@@ -1884,6 +1886,15 @@ text-align: center;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 600;
+}
+.popout_return, .fixed_return {
+    line-height: 45px;
+}
+p.noteStamp {
+	color: #D78D43;
+}
+.buttons {
+	height: 50px;
 }
 .return_support {
 	margin-right: 5px;
@@ -2200,6 +2211,25 @@ body {
     border-bottom-left-radius: 5px;
 }
 /*Goals styles*/
+#filters span {
+    background: #374658;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-right:5px;
+}
+.newFilter {
+    color: red;
+    text-decoration: none;
+    margin-left:5px;
+}
+.newFilter:after {
+	content: 'X';
+}
+div#filters {
+    float: right;
+    margin-right: 5px;
+    line-height: 30px;
+}
 .goalsFilter {
 	float: right;
 	margin-right: 3px;
@@ -2392,4 +2422,92 @@ margin-top: 20px;
 	margin-top: 10% !important;
 	width: 810px !important;
 	border-radius: 5px;
+}
+/*Dashboard Styles*/
+#overview {
+    color: #fff;
+    text-align: center;
+}
+#overview > .box {
+    display: inline-block;
+    width: 32%;
+    margin: 10px 0;
+}
+.user .user_info .links {
+	float: right;
+}
+.user {
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+}
+.user .user_info {
+    padding: 5px 15px;
+    font-size: 30px;
+}
+.user .user_view .box {
+    display: inline-table;
+    width: 22%;
+    margin: 0 10px;
+}
+.user .user_view .box h2 {
+	font-size: 18px;
+}
+.user .user_view .box span {
+    font-size: 60px;
+}
+.user .user_view {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.donutKey span {
+    margin-right: 7px;
+}
+span.completedColor {
+    color: #5dcc18;
+}
+span.inQColor {
+    color: #4042d6;
+}
+span.inProcessColor {
+    color: #efa12b;
+}
+span.overviewNum {
+    position:relative;
+    top: -120px;
+    left: -136px;
+    font-size: 18px;
+}
+span.history_nav {
+    float: left;
+}
+div.historyNav {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+}
+div.domains p {
+    width:50%;
+    display:inline-table;
+    text-align:left;
+}
+.user a {
+    color: #D78D43;
+}
+span.dateSpan {
+    font-size: 20px;
+    color: #d78d43;
+}
+/*END DASHBOARD STYLES*/
+
+//*DONUTS STYLEZ*//
+
+div.bigdonut {
+    text-align: center !important;
+}
+.donut {
+    display: inline-block;
+}
+div.donuts {
+    text-align: center;
 }
