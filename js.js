@@ -1333,6 +1333,108 @@ $(document).ready(function(){
 		});
 		$(this).parents("div:first").remove();
 	});
+	//Dashboard FUNCTIONS_-----------------
+	//Click to see which domains the user is assigned Dashboard.php
+	$(document).on('click', '.dashAssigned', function() {
+		var name = $(this).data('name');
+		var permissions = $(this).data('permissions');
+		var parent = $(this).parents('.user');
+		var child = parent.children('.user_view');
+		$.ajax({
+			url: 'partials/dashboard_inq.php',
+			type: "GET",
+			data: ({name: name, permissions: permissions}),
+			success: function(data){
+				child.html(data);
+				if($('.domains p').length % 2 != 0){
+					$('.domains p').last().css("width", "100%");
+				}
+			}
+		});
+	});
+	//load Personal history dashboard.php
+	$(document).ready(function(){
+		var thisguy = $('.historyjs');
+		var date = thisguy.data('date');
+		var user = thisguy.data('user');
+		var team = thisguy.data('team');
+		$.ajax({
+			url: 'partials/dashboard_history.php',
+			type: 'GET',
+			data: ({date: date, user: user, team: team}),
+			success: function(data){
+				$('.history_view').html(data);
+			}
+		});
+	});
+	//Load Team Overviews dashboard.php
+	$(document).on('click', '.userOverview', function(){
+		var parent = $(this).parents('.user');
+		var name = parent.data('name');
+		var user_view = parent.children('.user_view');
+		$.ajax({
+			url: 'partials/dashboard_overview.php',
+			type: 'GET',
+			data: ({name: name}),
+			success: function(data){
+				user_view.html(data);
+			}
+		});
+	});
+	//load Team Members History dashboard.php
+	$(document).on('click', '.historyView', function() {
+		var date = $(this).data('date');
+		var user = $(this).data('user');
+		var team = $(this).data('team');
+		var parent = $(this).parents('.user');
+		var child = parent.children('.user_view');
+		$.ajax({
+			url: 'partials/dashboard_history.php',
+			type: 'GET',
+			data: ({date: date, user: user, team: team, teamLead: 'yes'}),
+			success: function(data){
+				child.html(data);
+				if($('.domains p').length % 2 != 0){
+					$('.domains p').last().css("width", "100%");
+				}
+			}
+		});
+	});
+	//Change Date on click TEAM LEAD dashboard.php
+	$(document).on('click', '.changeHistory', function() {
+		var parent = $(this).parents('.user');
+		var child = parent.children('.user_info').children('.links').children('.historyView');
+		var view = parent.children('.user_view');
+		var date = $(this).html();
+		var user = child.data('user');
+		var team = child.data('team');
+		$.ajax({
+			url: 'partials/dashboard_history.php',
+			type: 'GET',
+			data: ({date: date, user: user, team: team, teamLead: 'yes'}),
+			success: function(data){
+				view.html(data);
+				if($('.domains p').length % 2 != 0){
+					$('.domains p').last().css("width", "100%");
+				}
+			}
+		});
+	});
+	//Change Date on click USER dashboard.php
+	$(document).on('click', '.change_date', function(){
+		var thisguy = $('.historyjs');
+		var user = thisguy.data('user');
+		var team = thisguy.data('team');
+		var date = $(this).html();
+		$.ajax({
+			url: 'partials/dashboard_history.php',
+			type: 'GET',
+			data: ({date: date, user: user, team: team}),
+			success: function(data){
+				$('.history_view').html(data);
+			}
+		});
+	});
 	// Live numbers auto refresh //
 function numbers() {
 	$('#liveupdate').load('newliveupdate.php');
