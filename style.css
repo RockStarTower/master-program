@@ -308,7 +308,6 @@ body.loginpage {
 	display: inline-block;
 	min-height: 430px;
 	height: 100%;
-	width: 1200px;
 	margin:auto;
 	margin-top: 25px;
 }
@@ -336,6 +335,7 @@ font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 .sidebar {
 	float: right;
+	margin-left: 35px;
 }
 
 .sidebar iframe {
@@ -2108,6 +2108,7 @@ body {
 .adminwrapper {
 	color: #fff;
 	position: relative;
+	margin: 25px 15%;
 }
 .adminwrapper a {
 	color: #fff;
@@ -2424,6 +2425,14 @@ margin-top: 20px;
 	border-radius: 5px;
 }
 /*Dashboard Styles*/
+.user_view .floatOverview {
+	color: #D78D43;
+	font-size: 25px;
+}
+.floatOverview {
+    text-align: left;
+    border-bottom: 1px solid white;
+}
 #overview {
     color: #fff;
     text-align: center;
@@ -2438,7 +2447,7 @@ margin-top: 20px;
 }
 .user {
     font-size: 1.5em;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #D78D43;
 }
 .user .user_info {
     padding: 5px 15px;
