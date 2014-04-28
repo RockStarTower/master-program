@@ -1,4 +1,3 @@
-<div class="page-wrap">
 <div class="adminwrapper">
 <input type="text" id="filter" placeholder="Filter Users" />
 	<div class="content">
@@ -60,7 +59,6 @@
 		</form>
 		</div>
 	</div>
-</div>
 </div>
 <div id="edit_wrap">
 	<div id="edit_wrapper">
