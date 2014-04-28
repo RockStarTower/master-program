@@ -840,7 +840,7 @@ function inMyQueue($mysqli, $fullname, $permissions){
 			$domain_data = mysqli_fetch_assoc($results);
 			$counter++;
 		}
-		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND CloneFinished='0000-00-00'";
+		$query = "SELECT * FROM DomainDetails WHERE Cloner='$fullname' AND DevStart='0000-00-00' AND CloneFinished!='0000-00-00' AND Developer!=''";
 		$results = mysqli_query($mysqli, $query);
 		$rows = mysqli_num_rows($results);
 		
@@ -1017,6 +1017,13 @@ $monthEnd = $curYear . '-' . $curMonth . '-31';
 			$previous = 'DateBought';
 			$person = 'Writer';
 			break;
+		case 'Writer':
+			$stmt = "DateBought!='0000-00-00' AND DesignStart='0000-00-00'";
+			$date1 = 'ContentStart';
+			$date2 = 'ContentFinished';
+			$previous = 'DateBought';
+			$person = 'Writer';
+			break;
 		case 'Design':
 			$stmt = "ContentFinished!='0000-00-00' AND CloneFinished='0000-00-00'";
 			$date1 = 'DesignStart';
@@ -1120,9 +1127,6 @@ function userOverview($mysqli, $user, $permissions){
 	$inQ = 0;
 
 	switch ($permissions) {
-		case 'Writer':
-			$task = 'ContentFinished';
-			break;
 		case 'Designer':
 			$task = 'DesignFinish';
 			$team = 'Designer';
@@ -1140,79 +1144,40 @@ function userOverview($mysqli, $user, $permissions){
 			$team = 'QAInspector';
 			break;
 	}
-	
-	if($permissions == 'Writer'){
-		$query = "SELECT * FROM DomainDetails WHERE ContentStart!='0000-00-00' AND ReviewStart='$curDate' AND Reviewer='$user' AND ContentFinished='0000-00-00' OR ContentStart='$curDate' AND ReviewStart='0000-00-00' Writer='$user' AND ContentFinished='0000-00-00'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Day Counter
-			if($userData[$task] == $curDate){
-				$dcomplete++;
-			}
-		}
 
-		$query = "SELECT * FROM DomainDetails WHERE ContentStart BETWEEN '$beginWeek' AND '$endWeek' AND Writer='$user' AND ReviewStart='0000-00-00' OR ReviewStart BETWEEN '$beginWeek' AND '$endweek' AND Reviewer='$user' AND ContentFinished='0000-00-00'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Week Counter
-			if($userData[$task] >= $beginWeek && $userData[$task] <= $endWeek){
-				$wcomplete++;
-			}
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task='$curDate'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Day Counter
+		if($userData[$task] == $curDate){
+			$dcomplete++;
 		}
+	}
 
-		$query = "SELECT * FROM DomainDetails WHERE ContentStart BETWEEN '$monthBegin' AND '$monthEnd' AND Writer='$user' AND ReviewStart='0000-00-00' OR ReviewStart BETWEEN '$monthBegin' AND '$monthEnd' AND Reviewer='$user' AND ContentFinished='0000-00-00'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Month Counter
-			if($userData[$task] >= $monthBegin && $userData[$task] <= $monthEnd){
-				$mcomplete++;
-			}
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$beginWeek' AND '$endWeek'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Week Counter
+		if($userData[$task] >= $beginWeek && $userData[$task] <= $endWeek){
+			$wcomplete++;
 		}
-	} else {
+	}
 
-		$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task='$curDate'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Day Counter
-			if($userData[$task] == $curDate){
-				$dcomplete++;
-			}
-		}
-
-		$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$beginWeek' AND '$endWeek'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Week Counter
-			if($userData[$task] >= $beginWeek && $userData[$task] <= $endWeek){
-				$wcomplete++;
-			}
-		}
-
-		$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$monthBegin' AND '$monthEnd'";
-		$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
-		$rows = mysqli_num_rows($results);
-		for ($a = 0; $a <= $rows; $a++){
-			mysqli_data_seek($results, $a);
-			$userData = mysqli_fetch_assoc($results);
-			//Month Counter
-			if($userData[$task] >= $monthBegin && $userData[$task] <= $monthEnd){
-				$mcomplete++;
-			}
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$monthBegin' AND '$monthEnd'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Month Counter
+		if($userData[$task] >= $monthBegin && $userData[$task] <= $monthEnd){
+			$mcomplete++;
 		}
 	}
 	$userOverview = array(
@@ -1228,5 +1193,139 @@ function userOverview($mysqli, $user, $permissions){
 	);
 
 	return $userOverview;
+}
+
+function writerOverview($mysqli, $user){
+	$curDate = date ("Y-m-d");
+	$curMonth = date('m');
+	$curYear = date('Y');
+	$beginWeek = date("Y-m-d", strtotime('last sunday'));
+	$endWeek = date("Y-m-d", strtotime('this friday'));
+	$monthBegin = $curYear . '-' . $curMonth . '-01';
+	$monthEnd = $curYear . '-' . $curMonth . '-31';
+
+	$dcomplete = 0;
+	$wcomplete = 0;
+	$mcomplete = 0;
+	$inQ = 0;
+
+	$task = 'ReviewStart';
+	$team = 'Writer';
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task='$curDate'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Day Counter
+		if($userData[$task] == $curDate){
+			$dcomplete++;
+		}
+	}
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$beginWeek' AND '$endWeek'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Week Counter
+		if($userData[$task] >= $beginWeek && $userData[$task] <= $endWeek){
+			$wcomplete++;
+		}
+	}
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$monthBegin' AND '$monthEnd'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Month Counter
+		if($userData[$task] >= $monthBegin && $userData[$task] <= $monthEnd){
+			$mcomplete++;
+		}
+	}
+	$writerOverview = array(
+		'day' => array(
+			'complete' => $dcomplete
+			),
+		'week' => array(
+			'complete' => $wcomplete
+			),
+		'month' => array(
+			'complete' => $mcomplete
+			),
+	);
+
+	return $writerOverview;
+}
+
+function reviewerOverview($mysqli, $user){
+	$curDate = date ("Y-m-d");
+	$curMonth = date('m');
+	$curYear = date('Y');
+	$beginWeek = date("Y-m-d", strtotime('last sunday'));
+	$endWeek = date("Y-m-d", strtotime('this friday'));
+	$monthBegin = $curYear . '-' . $curMonth . '-01';
+	$monthEnd = $curYear . '-' . $curMonth . '-31';
+
+	$dcomplete = 0;
+	$wcomplete = 0;
+	$mcomplete = 0;
+	$inQ = 0;
+
+	$task = 'ContentFinished';
+	$team = 'Reviewer';
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task='$curDate'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Day Counter
+		if($userData[$task] == $curDate){
+			$dcomplete++;
+		}
+	}
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$beginWeek' AND '$endWeek'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Week Counter
+		if($userData[$task] >= $beginWeek && $userData[$task] <= $endWeek){
+			$wcomplete++;
+		}
+	}
+
+	$query = "SELECT * FROM DomainDetails WHERE $team='$user' AND $task BETWEEN '$monthBegin' AND '$monthEnd'";
+	$results = mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+	$rows = mysqli_num_rows($results);
+	for ($a = 0; $a <= $rows; $a++){
+		mysqli_data_seek($results, $a);
+		$userData = mysqli_fetch_assoc($results);
+		//Month Counter
+		if($userData[$task] >= $monthBegin && $userData[$task] <= $monthEnd){
+			$mcomplete++;
+		}
+	}
+	$reviewerOverview = array(
+		'day' => array(
+			'complete' => $dcomplete
+			),
+		'week' => array(
+			'complete' => $wcomplete
+			),
+		'month' => array(
+			'complete' => $mcomplete
+			),
+	);
+
+	return $reviewerOverview;
 }
 ?>

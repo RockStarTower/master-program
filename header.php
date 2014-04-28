@@ -40,6 +40,7 @@ echo autocompleteRegistrarList();
 			<img class="storm" src="<?=root_url();?>images/storm-trooper.png">
 			<a class="user_log" href="#"><?php echo $user; echo ' ('.$my_tasks.')'; ?></a>
 			<ul class="sub-menu" style="display: none;">
+				<li><a href="<?=root_url();?>dashboard.php">Dashboard</a></li>
 				<li><a href="<?=root_url();?>my_tasks.php">My Tasks</a></li>
 				<li><a href="<?=root_url();?>users/logout.php">Log Out?</a></li>
 			</ul>

@@ -77,7 +77,7 @@ case 'Support':
 		$domain_data = mysqli_fetch_assoc($results);
 		echo "<p>".$domain_data['Domain']."</p>";
 	}
-	$query = "SELECT * FROM DomainDetails WHERE Cloner='$name' AND DevStart='0000-00-00' AND CloneFinished='0000-00-00'";
+	$query = "SELECT * FROM DomainDetails WHERE Cloner='$name' AND DevStart='0000-00-00' AND CloneFinished!='0000-00-00' AND Developer!=''";
 	$results = mysqli_query($mysqli, $query);
 	$rows = mysqli_num_rows($results);
 	
