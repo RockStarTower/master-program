@@ -670,7 +670,7 @@ function json_dropdown($list, $value){
 	$value = trim($value);
 	//$list needs to be theme_list, manage_list, type_list
 	//$Value is a value pulled from the database. Pass a param even if its empty
-	$jsonPath = 'http://darth-serverus.boocorp.com/sandbox/json/'.$list.'.json';
+	$jsonPath = 'http://darth-serverus.boocorp.com/json/'.$list.'.json';
 	$json = file_get_contents($jsonPath);
 	$json = json_decode($json, true);
 	if(!empty($value) && !in_array($value, $json)){
