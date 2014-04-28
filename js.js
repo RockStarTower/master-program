@@ -1627,6 +1627,14 @@ $(document).ready(function(){
 	"ContentWeekChart",
 	"ContentMonthChart",
 	"ContentAllChart",
+	"WriterDayChart",
+	"WriterWeekChart",
+	"WriterMonthChart",
+	"WriterAllChart",
+	"ReviewDayChart",
+	"ReviewWeekChart",
+	"ReviewMonthChart",
+	"ReviewAllChart",
 	"DevDayChart",
 	"DevWeekChart",
 	"DevMonthChart",
@@ -1670,124 +1678,10 @@ $(document).ready(function(){
 				}
 			]
 			new Chart(ctx).Doughnut(data,options);
+			var key = chartid.siblings('.donutKey');
+			key.children('.completedSpan').children('.cnumber').html('('+complete+')');
+			key.children('.inQSpan').children('.qnumber').html('('+inQ+')');
+			key.children('.inProcessSpan').children('.pnumber').html('('+inProcess+')');
 		}
 	}
 });
-
-$(function () {
-    
-        var colors = Highcharts.getOptions().colors,
-            name = 'Browser brands',
-            data = [{
-                    color: colors[0],
-                    drilldown: {
-                        name: 'Content',
-                        categories: ['Content'],
-                        data: [10.85],
-                        color: colors[0]
-                    }
-                }, {
-                    color: colors[1],
-                    drilldown: {
-                        name: 'Design',
-                        categories: ['Design'],
-                        data: [5.20],
-                        color: colors[1]
-                    }
-                }, {
-                    color: colors[2],
-                    drilldown: {
-                        name: 'Support',
-                        categories: ['Support'],
-                        data: [5.12],
-                        color: colors[2]
-                    }
-                }, {
-                    color: colors[3],
-                    drilldown: {
-                        name: 'Development',
-                        categories: ['Development'],
-                        data: [4.55],
-                        color: colors[3]
-                    }
-                }, {
-                    color: colors[4],
-                    drilldown: {
-                        name: 'QA',
-                        categories: ['QA'],
-                        data: [5.12],
-                        color: colors[4]
-                    }
-                }];
-    
-    
-        // Build the data arrays
-        var browserData = [];
-        var versionsData = [];
-        for (var i = 0; i < data.length; i++) {
-            
-            // add Tptal data
-            browserData.push({
-                name: '56',
-                y: [100],
-                color: colors[1]
-            });
-    
-            // add Team data
-            for (var j = 0; j < data[i].drilldown.data.length; j++) {
-                var brightness = 0.2 - (j / data[i].drilldown.data.length) / 5 ;
-                versionsData.push({
-                    name: data[i].drilldown.categories[j],
-                    y: data[i].drilldown.data[j],
-                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
-                });
-            }
-        }
-    
-        // Create the chart
-        $('#thisNewChart').highcharts({
-            chart: {
-                type: 'pie'
-            },
-            title: {
-                text: 'Team Week'
-            },
-            yAxis: {
-                title: {
-                    text: 'Total percent market share'
-                }
-            },
-            plotOptions: {
-                pie: {
-                    shadow: false,
-                    center: ['50%', '50%']
-                }
-            },
-            tooltip: {
-        	    valueSuffix: ''
-            },
-            series: [{
-                name: 'Browsers',
-                data: browserData,
-                size: '60%',
-                dataLabels: {
-                    formatter: function() {
-                        return this.y > 5 ? this.point.name : null;
-                    },
-                    color: 'black',
-                    distance: -100
-                }
-            }, {
-                name: 'Skippies',
-                data: versionsData,
-                size: '90%',
-                innerSize: '75%',
-                dataLabels: {
-                    formatter: function() {
-                        // display only if larger than 1
-                        return this.y > 1 ? '<b>'+ this.point.name +':</b> '+ this.y  : null;
-                    }
-                }
-            }]
-        });
-    });
