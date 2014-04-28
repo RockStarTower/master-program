@@ -61,7 +61,7 @@ if(login_check($mysqli) == true) {
 				<a href="javascript:void(0);" class="claim_button ready active_goal" <?=$blog?> data-username="<?=$fullname?>" data-date="<?=$fulldate?>" data-domain="<?=$domain_data['Domain']?>" data-user_permissions="<?=$permissions?>"> Claim Task </a>
 			</div>
 		<?php }
-		if ($permissions == 'Design' && $design_inprocess == true){ ?>
+		if ($permissions == 'Designer' && $design_inprocess == true){ ?>
 			<div class="inProcessTask">
 				<p class="float-left domain_info"><a target="_blank" href="http://<?=$domain_data['Domain'];?>"><?=$domain_data['Domain'];?></a> - <?=$domain_data['Country'];?>-<?=$domain_data['Language'];?> - <?=$domain_data['Vertical'];?></p>
 				<a href="javascript:void(0);" class="claim_button ready active_goal" <?=$blog?> data-username="<?=$fullname?>" data-date="<?=$fulldate?>" data-domain="<?=$domain_data['Domain']?>" data-user_permissions="<?=$permissions?>"> Claim Task </a>
