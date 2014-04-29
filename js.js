@@ -1662,7 +1662,7 @@ $(document).ready(function(){
 			var inQ = chartid.data('inq');
 			var inProcess = chartid.data('inprocess');
 			var ctx = thischart.getContext('2d');
-			var options = []
+			var options = {animation: false, segmentShowStroke: false, percentageInnerCutout: 75}
 			var data = [
 				{
 					value: complete,
