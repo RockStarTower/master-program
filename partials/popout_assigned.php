@@ -41,6 +41,6 @@ $rows = mysqli_num_rows($results);
 for ($a = 0; $a < $rows; $a++){
 	mysqli_data_seek($results, $a);
 	$domain_data = mysqli_fetch_assoc($results);
-	?><div class="claimer"><a href="<?=$domain_data['Domain']?>" target="_blank"><?=$domain_data['Domain']?></a> - <?=$domain_data[$role]?></div><?php
+	?><div class="claimer"><a href="http://<?=$domain_data['Domain']?>" target="_blank"><?=$domain_data['Domain']?></a> - <?=$domain_data[$role]?></div><?php
 }
 echo '</div>';
