@@ -260,9 +260,11 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 	<?php if ($permissions == 'Admin'){
 		?><a href="javascript:void(0);" data-domain="<?=$domain_data['Domain']?>" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" class="return_support">Send To Support</a><?php
 	}
-	if($writing != 'Writing'){ ?>
-		<a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
-	<?php } 
+	if($writing != 'Writing'){
+		if(isset($_GET['fixed']) && $_GET['fixed'] == 'fixed'){
+		} else { ?>
+			<a href="javascript:void(0);" data-permissions="<?=$permissions?>" data-domain="<?=$domain_data['Domain']?>" class="popout_return">Back to queue</a>
+	<?php } }
 	if (!isset($_GET['fixed'])){
 	?>
 		<button class="popout_button">Submit</button>
