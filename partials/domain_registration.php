@@ -12,7 +12,7 @@ $domain = mysqli_fetch_assoc($domain);
 	<section class="vSection"><p><strong>Registrar</strong></p>
 	<p><?=$domain['Registrar']?></p></section>
 	<section class="vSection"><p><strong>Renewal Date</strong></p>
-	<p ><?=$domain['RenewalDate']?></p></section>
+	<p><?=$domain['RenewalDate']?></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>Renewal Cost</strong></p>
@@ -29,6 +29,6 @@ $domain = mysqli_fetch_assoc($domain);
 <div>								
 	<section class="vSection"><p><strong>Total Cost</strong></p>
 	<p>&#36;<?=$domain['TotalCost']?></p></section>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 </div>

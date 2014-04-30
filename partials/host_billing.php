@@ -12,7 +12,7 @@ $host = mysqli_fetch_assoc($host);
 	<section class="vSection"><p><strong>Credit Card on Account</strong></p>
 	<p><?=$host['CCOnAccount']?></p></section>
 	<section class="vSection"><p><strong>Renewal Date</strong></p>
-	<p ><?=$host['RenewDate']?></p></section>
+	<p><?=$host['RenewDate']?></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>Yearly Hosting Cost</strong></p>
@@ -23,6 +23,6 @@ $host = mysqli_fetch_assoc($host);
 <div>
 	<section class="vSection"><p><strong>Total Cost</strong></p>
 	<p><?=$host['TotalCost']?></p></section>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 </div>

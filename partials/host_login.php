@@ -31,8 +31,8 @@ $host = mysqli_fetch_assoc($host);
 <div>
 	<section class="vSection"><p><strong>FTP Host</strong></p>
 	<p><?=$host['FTPHost']?></p></section>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>FTP Username</strong></p>

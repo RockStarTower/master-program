@@ -12,7 +12,7 @@ $domain = mysqli_fetch_assoc($domain);
 	<section class="vSection"><p><strong>ManageWP Account</strong></p>
 	<p><?=$domain['ManageWPAccount']?></p></section>
 	<section class="vSection"><p><strong>Database Name</strong></p>
-	<p ><?=$domain['DBName']?></p></section>
+	<p><?=$domain['DBName']?></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>Theme</strong></p>

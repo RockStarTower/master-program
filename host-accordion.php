@@ -47,8 +47,8 @@ $host = mysqli_fetch_assoc($host);
 		<div>		
 			<section class="tSection"><p><strong>IP Address</strong></p>
 			<p><?=$host['IPAddress']?></p></section>
-			<p></p>
-			<p></p>
+			<section class="tSection"><p></p>
+			<p></p></section>
 		</div>
 	</section>
 		<div><p><h2 class="hostNotes">Host Notes <a id="addHostNote" class="addAccordionNote" href="javascript:void(0);" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" data-host="<?=$HostAccount?>">Add Note</a><p id="hostNoteSuccess"></p></h2><div id="newHostNotes" class="notesArea floatRight"><?=stripslashes($host['HostNotes'])?></div></p></div>

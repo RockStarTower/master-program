@@ -104,8 +104,8 @@ foreach ($statusArr as $key => $val) {
 		<div>		
 			<section class="tSection"><p><strong>IP Address</strong></p>
 			<p><?=$host['IPAddress']?></p></section>
-			<p></p>
-			<p></p>
+			<section class="tSection"><p></p>
+			<p></p></section>
 		</div>
 	</section>
 		<div><p><h2 class="domainNotes">Domain Notes <a id="addNote" class="addAccordionNote" href="javascript:void(0);" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" data-domain="<?=$DomainName?>">Add Note</a><p id="noteSuccess"></p></h2><h2 class="hostNotes">Host Notes <a id="addHostNote" class="addAccordionNote" href="javascript:void(0);" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" data-host="<?=$HostAccount?>">Add Note</a><p id="hostNoteSuccess"></p></h2><div id="newDomainNotes" class="notesArea"><?=stripslashes($domain['DomainNotes'])?></div><div id="newHostNotes" class="notesArea floatRight"><?=stripslashes($host['HostNotes'])?></div></p></div>
@@ -136,8 +136,8 @@ foreach ($statusArr as $key => $val) {
 		<div>
 			<section class="vSection"><p><strong>Bought By</strong></p>
 			<p><?=$domain['BoughtBy']?></p></section>
-			<p></p>
-			<p></p>
+			<section class="vSection"><p></p>
+			<p></p></section>
 		</div>
 		<div>
 			<section class="vSection"><p><strong>Content Admin</strong></p>
@@ -160,8 +160,8 @@ foreach ($statusArr as $key => $val) {
 		<div>
 			<section class="vSection"><p><strong>Content Hours</strong></p>
 			<p><?=$domain['ContentHours']?></p></section>
-			<p></p>
-			<p></p>
+			<section class="vSection"><p></p>
+			<p></p></section>
 		</div>
 		<div>
 			<section class="vSection"><p><strong>Designer</strong></p>
@@ -170,8 +170,8 @@ foreach ($statusArr as $key => $val) {
 			<p><?=$domain['DesignStart']?></p></section>
 		</div>
 		<div>
-			<p></p>
-			<p></p>
+			<section class="vSection"><p></p>
+			<p></p></section>
 			<section class="vSection"><p><strong>Design Finished</strong></p>
 			<p><?=$domain['DesignFinish']?></p></section>
 		</div>
@@ -188,8 +188,8 @@ foreach ($statusArr as $key => $val) {
 			<p><?=$domain['DevStart']?></p></section>
 		</div>
 		<div>
-			<p></p>
-			<p></p>		
+			<section class="vSection"><p></p>
+			<p></p></section>
 			<section class="vSection"><p><strong>Dev Finish</strong></p>
 			<p><?=$domain['DevFinish']?></p></section>
 		</div>

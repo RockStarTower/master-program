@@ -17,8 +17,8 @@ $domain = mysqli_fetch_assoc($domain);
 <div>
 	<section class="vSection"><p><strong>Bought By</strong></p>
 	<p><?=$domain['BoughtBy']?></p></section>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>Content Admin</strong></p>
@@ -41,8 +41,8 @@ $domain = mysqli_fetch_assoc($domain);
 <div>
 	<section class="vSection"><p><strong>Content Hours</strong></p>
 	<p><?=$domain['ContentHours']?></p></section>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 </div>
 <div>
 	<section class="vSection"><p><strong>Designer</strong></p>
@@ -51,8 +51,8 @@ $domain = mysqli_fetch_assoc($domain);
 	<p><?=$domain['DesignStart']?></p></section>
 </div>
 <div>
-	<p></p>
-	<p></p>
+	<section class="vSection"><p></p>
+	<p></p></section>
 	<section class="vSection"><p><strong>Design Finished</strong></p>
 	<p><?=$domain['DesignFinish']?></p></section>
 </div>
@@ -69,8 +69,8 @@ $domain = mysqli_fetch_assoc($domain);
 	<p><?=$domain['DevStart']?></p></section>
 </div>
 <div>
-	<p></p>
-	<p></p>		
+	<section class="vSection"><p></p>
+	<p></p></section>	
 	<section class="vSection"><p><strong>Dev Finish</strong></p>
 	<p><?=$domain['DevFinish']?></p></section>
 </div>
