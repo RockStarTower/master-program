@@ -881,7 +881,7 @@ function domainNotes($mysqli, $domain, $date, $fullname, $newNote){
 	$result = mysqli_query($mysqli, $query);
 	$domain_data = mysqli_fetch_assoc($result);
 
-	$addNote = $domain_data['DomainNotes'] . '<div class="domainNote"><p class="noteStamp">'.$fullname.': '.$date.'</p><p class="noteContent">'.$newNote.'</p></div>';
+	$addNote = '<div class="domainNote"><p class="noteStamp">'.$fullname.': '.$date.'</p><p class="noteContent">'.$newNote.'</p></div>' . $domain_data['DomainNotes'];
 
 	$query = "UPDATE DomainDetails SET DomainNotes='$addNote' WHERE Domain='$domain'";
 	mysqli_query($mysqli, $query);
@@ -897,6 +897,30 @@ function modifyNotes($mysqli, $domain, $date, $fullname, $oldnote, $newnote){
 	echo $modifiedNote;
 
 	$query = "UPDATE DomainDetails SET DomainNotes='$modifiedNote' WHERE Domain='$domain'";
+	mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+}
+
+function hostNotes($mysqli, $host, $date, $fullname, $newNote){
+	$query = "SELECT * FROM HostDetails WHERE HostAccount='$host'";
+	$result = mysqli_query($mysqli, $query);
+	$host_data = mysqli_fetch_assoc($result);
+
+	$addNote = '<div class="domainNote"><p class="noteStamp">'.$fullname.': '.$date.'</p><p class="noteContent">'.$newNote.'</p></div>' . $host_data['HostNotes'];
+
+	$query = "UPDATE HostDetails SET HostNotes='$addNote' WHERE HostAccount='$host'";
+	mysqli_query($mysqli, $query);
+}
+
+function modHostNotes($mysqli, $host, $date, $fullname, $oldnote, $newnote){
+	$query = "SELECT * FROM HostDetails WHERE HostAccount='$host'";
+	$result = mysqli_query($mysqli, $query);
+	$host_data = mysqli_fetch_assoc($result);
+
+	$modifiedNote = str_replace($oldnote, $newnote, $host_data['HostNotes']);
+	$modifiedNote = addslashes($modifiedNote);
+	echo $modifiedNote;
+
+	$query = "UPDATE HostDetails SET HostNotes='$modifiedNote' WHERE HostAccount='$host'";
 	mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
 }
 

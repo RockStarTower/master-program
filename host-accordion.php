@@ -4,183 +4,115 @@ include 'header.php';
 sec_session_start();
 if(login_check($mysqli) == true) {
 ?>
-<?php 
+<?php
+$mon = date('m');
+$year = date('Y');
+$day = date('d');
+$fulldate = $year.'-'.$mon.'-'.$day;
 $HostAccount = $_GET['HostAccount'];
-$con = mysqli_connect('localhost', 'root', 'root', 'ecoabsor_master');
-$request = "SELECT * FROM HostDetails WHERE HostAccount='$HostAccount'";
-if ($result = mysqli_query($con, $request) or die("Error: ".mysqli_error($con))) {
-	while ( $row = mysqli_fetch_array($result, MYSQLI_ASSOC) ) {
-		$DateBought = $row['DateBought'];
-		$Country = $row['Country'];
-		$RenewDate = $row['RenewDate'];
-		$ServerLocations = $row['ServerLocations'];
-		$TotalCost = $row['TotalCost'];
-		$NameServers = $row['NameServers'];
-		$Email = $row['Email'];
-		$IPAddress = $row['IPAddress'];
-		$CpanelURL = $row['cPanelURL'];
-		$CpanelUsername = $row['cPanelUser'];
-		$CpanelPassword = $row['cPanelPass'];
-		$BillingURL = $row['BillingURL'];
-		$BillingUsername = $row['BillingUser'];
-		$BillingPassword = $row['BillingPass'];
-		$FTPUsername = $row['FTPUser'];
-		$FTPPassword = $row['FTPPass'];
-		$SecurityPIN = $row['PIN'];
-		$SecurityAnswer = $row['SecurityAnswer'];
-		$CCOnAccount = $row['CCOnAccount'];
-		$YearlyHostingCost = $row['YearlyCost'];
-		$YearlyDedicatedIPCost = $row['DedicatedIPCost'];
-		$HostNotes = stripslashes($row['HostNotes']);
-	}
-}
 
+$host_request = "SELECT * FROM HostDetails WHERE HostAccount='$HostAccount'";
+$host = mysqli_query($mysqli, $host_request) or die("Error: ".mysqli_error($con));
+$host = mysqli_fetch_assoc($host);
 ?>
-<div class="page-wrap">
-	<div id="tabs">
-		<div id="accordion">
-			<h3>Basic Details</h3>
-			<div>
-				<a id="host_basic" class="edit_link" name="<?=$HostAccount?>" href="javascript:void(0)">Edit</a>
-				<table>
-					<tbody>
-						<tr>
-							<td><strong>Host Account:</strong></td>
-							<td><?=$HostAccount?></td>
-							<td><strong>Date Bought:</strong></td>
-							<td><?=$DateBought?></td>
-						</tr>
-						<tr>
-							<td><strong>Country:</strong></td>
-							<td><?=$Country?></td>
-							<td><strong>Renew Date:</strong></td>
-							<td><?=$RenewDate?></td>
-						</tr>
-						<tr>
-							<td><strong>Server Locations:</strong></td>
-							<td><?=$ServerLocations?></td>
-							<td><strong>Total Cost:</strong></td>
-							<td><?=$TotalCost?></td>
-						</tr>
-						<tr>
-							<td><strong>Nameservers:</strong></td>
-							<td><?=$NameServers?></td>
-							<td><strong>Email on Account:</strong></td>
-							<td><?=$Email?></td>
-						</tr>
-						<tr>
-							<td><strong>IP Address:</strong></td>
-							<td><?=$IPAddress?></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<h3>Login Information</h3>
-			<div>
-				<a id="host_login" class="edit_link" name="<?=$HostAccount?>" href="javascript:void(0)">Edit</a>
-				<table>
-					<thead>
-						<tr>
-							<th>Cpanel</th>
-							<th>Billing</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><strong>CPanel URL:</strong></td>
-							<td><?=$CpanelURL?></td>
-							<td><strong>Billing URL:</strong></td>
-							<td><?=$BillingURL?></td>
-						</tr>
-						<tr>
-							<td><strong>CPanel Username:</strong></td>
-							<td><?=$CpanelUsername?></td>
-							<td><strong>Billing Username:</strong></td>
-							<td><?=$BillingUsername?></td>
-						</tr>
-						<tr>
-							<td><strong>CPanel Password:</strong></td>
-							<td><?=$CpanelPassword?></td>
-							<td><strong>Billing Password:</strong></td>
-							<td><?=$BillingPassword?></td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<thead>
-						<tr>
-							<th>FTP</th>
-							<th>Security</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><strong>FTP Username:</strong></td>
-							<td><?=$FTPUsername?></td>
-							<td><strong>Security PIN:</strong></td>
-							<td><?=$SecurityPIN?></td>
-						</tr>
-						<tr>
-							<td><strong>FTP Password:</strong></td>
-							<td><?=$FTPPassword?></td>
-							<td><strong>Security Question Answer:</strong></td>
-							<td><?=$SecurityAnswer?></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<h3>Billing Information</h3>
-			<div>
-				<a id="host_billing" class="edit_link" name="<?=$HostAccount?>" href="javascript:void(0)">Edit</a>
-				<table>
-					<tbody>
-						<tr>
-							<td><strong>Credit Card on Account:</strong></td>
-							<td><?=$CCOnAccount?></td>
-						</tr>
-						<tr>
-							<td><strong>Renewal Date:</strong></td>
-							<td><?=$RenewDate?></td>
-						</tr>
-						<tr>
-							<td><strong>Yearly Hosting Cost:</strong></td>
-							<td>&#36;<?=$YearlyHostingCost?></td>
-						</tr>
-						<tr>
-							<td><strong>Yearly Dedicated IP Cost:</strong></td>
-							<td>&#36;<?=$YearlyDedicatedIPCost?></td>
-						</tr>
-						<tr>
-							<td><strong>Total Cost:</strong></td>
-							<td>&#36;<?=$TotalCost?></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+<group class="hostAccordion">
+<div id="topOverview">
+<span id="hostName" class="currentSelection"><?=$host['HostAccount']?></span>
+	<a id="host_basic" class="edit_link btn-edit" data-section="hbasic" href="javascript:void(0)">Edit</a>
+	<section id="hostArea">
+		<div>
+			<section class="tSection"><p><strong>Host Account</strong></p>
+			<p><?=$host['HostAccount']?></p></section>
+			<section class="tSection"><p><strong>Date Bought</strong></p>
+			<p><?=$host['DateBought']?></p></section>
 		</div>
-		<form id="HostNotes_Form" action="" method="post">
-			<?php if ($HostNotes != '') { echo '<img class="vadernotes" src="images/vadernotes.png" />'; } ?>
-			<a id="Host_Notes_img" class="notes_img" href="javascript:void(0);"><img src="images/Host-Notes.png" /></a>
-			<span class="hostupdated"></span>
-			<textarea id="HostNotes" name="HostNotes" rows="25" cols="30"><?=$HostNotes?></textarea>
-			<input id="HostNotes_Before" name="HostNotes_Before" type="hidden" value="<?=$HostNotes?>" />
-			<input id="Host_Time" name="TimeStamp" type="hidden" value="<?php echo date("h:m:s"); ?> " />
-			<input id="Host_User" name="User" type="hidden" value="<?php echo $user; ?>" />
-			<input id="Host_Account" name="HostAccount" type="hidden" value="<?=$HostAccount?>" />
-		</form>
-	</div>	
+		<div>
+			<section class="tSection"><p><strong>Country</strong></p>
+			<p><?=$host['Country']?></p></section>
+			<section class="tSection"><p><strong>Renew Date</strong></p>
+			<p><?=$host['RenewDate']?></p></section>
+		</div>
+		<div>
+			<section class="tSection"><p><strong>Server Locations</strong></p>
+			<p><?=$host['ServerLocations']?></p></section>
+			<section class="tSection"><p><strong>Total Cost</strong></p>
+			<p><?=$host['TotalCost']?></p></section>
+		</div>
+		<div>
+			<section class="tSection"><p><strong>Nameservers</strong></p>
+			<p><?=$host['NameServers']?></p></section>
+			<section class="tSection"><p><strong>Email on Account</strong></p>
+			<p><?=$host['Email']?></p></section>
+		</div>
+		<div>		
+			<section class="tSection"><p><strong>IP Address</strong></p>
+			<p><?=$host['IPAddress']?></p></section>
+			<p></p>
+			<p></p>
+		</div>
+	</section>
+		<div><p><h2 class="hostNotes">Host Notes <a id="addHostNote" class="addAccordionNote" href="javascript:void(0);" data-name="<?=$fullname?>" data-date="<?=$fulldate?>" data-host="<?=$HostAccount?>">Add Note</a><p id="hostNoteSuccess"></p></h2><div id="newHostNotes" class="notesArea floatRight"><?=stripslashes($host['HostNotes'])?></div></p></div>
 </div>
+
+<div id="bottomOverview">
+<div id="leftNav">
+	<a href="javascript:void(0);" class="jsNavs navItem" data-click="login">Login Information</a>
+	<a href="javascript:void(0);" class="jsNavs btn-menu" data-click="billing">Billing Information</a>
+</div>
+
+	<div id="viewBox">
+		<div class="editButton"><a id="host_login" class="edit_link btn-edit" data-section="login" href="javascript:void(0)">Edit</a></div>
+		<div class="hostHeaders"><h2 class="cbheader">cPanel</h2><h2 class="cbheader">Billing</h2></div>
+		<div>
+			<section class="vSection"><p><strong>cPanel URL</strong></p>
+			<p><?=$host['cPanelURL']?></p></section>
+			<section class="vSection"><p><strong>Billing URL</strong></p>
+			<p ><?=$host['BillingURL']?></p></section>
+		</div>
+		<div>
+			<section class="vSection"><p><strong>cPanel Username</strong></p>
+			<p><?=$host['cPanelUser']?></p></section>
+			<section class="vSection"><p><strong>Billing Username</strong></p>
+			<p><?=$host['BillingUser']?></p></section>
+		</div>
+		<div>
+			<section class="vSection"><p><strong>cPanel Password</strong></p>
+			<p><?=$host['cPanelPass']?></p></section>
+			<section class="vSection"><p><strong>Billing Password</strong></p>
+			<p><?=$host['BillingPass']?></p></section>
+		</div>
+		<div class="hostHeaders"><h2 class="cbheader">FTP</h2><h2 class="cbheader">Security</h2></div>
+		<div>
+			<section class="vSection"><p><strong>FTP Host</strong></p>
+			<p><?=$host['FTPHost']?></p></section>
+			<p></p>
+			<p></p>
+		</div>
+		<div>
+			<section class="vSection"><p><strong>FTP Username</strong></p>
+			<p><?=$host['FTPUser']?></p></section>
+			<section class="vSection"><p><strong>Security PIN</strong></p>
+			<p><?=$host['PIN']?></p></section>
+		</div>
+		<div>
+			<section class="vSection"><p><strong>FTP Password</strong></p>
+			<p><?=$host['FTPPass']?></p></section>
+			<section class="vSection"><p><strong>Security Question Answer</strong></p>
+			<p><?=$host['SecurityAnswer']?></p></section>
+		</div>
+	</div>
+</div>
+</group>
+<div class="clearBoth"></div>
 <div id="edit_wrap">
 	<div id="edit_wrapper">
-		<a class="close" href="javascript:void(0)">Close</a>
+		<a class="close" href="javascript:void(0)">X</a>
 		<div id="edit"></div>
 	</div>
 </div>
 <?php
-} else {?>
-	<div id="notauthorized">
-   <p>You are not authorized to access this page.</p>
-   <a href="users/login.php">Please Login</a></div><?php
+} else {
+header('Location: users/login.php');
 }
 include 'footer.php';
 ?>

@@ -122,108 +122,12 @@
 		});
 		$(document).on('click', '.close', function() {
 			$('#edit_wrap').hide('fade');
-			window.location.reload();
+			var condition = $('.domainAccordion');
+			if(!condition){
+				window.location.reload();
+			}
 		});
-		$('#edit_wrap').hide();		
-		$("#host_basic").click(function(){
-			$('#edit_wrap').show();
-			var host = $('#host_basic').attr('name');
-			var domain = $('#host_billing').attr('data-domain');
-			$.ajax({
-				url: 'update_forms/edit_host_basic.php',
-				type: "GET",
-				data: ({HostAccount: host, DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#host_login").click(function(){
-			$('#edit_wrap').show();
-			var host = $('#host_login').attr('name');
-			var domain = $('#host_billing').attr('data-domain');
-			$.ajax({
-				url: 'update_forms/edit_host_login.php',
-				type: "GET",
-				data: ({HostAccount: host, DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#host_billing").click(function(){
-			$('#edit_wrap').show();
-			var host = $('#host_billing').attr('name');
-			var domain = $('#host_billing').attr('data-domain');
-			$.ajax({
-				url: 'update_forms/edit_host_billing.php',
-				type: "GET",
-				data: ({HostAccount: host, DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#domain_basic").click(function(){
-			$('#edit_wrap').show();
-			var domain = $('#domain_basic').attr('name');
-			$.ajax({
-				url: 'update_forms/edit_domain_basic.php',
-				type: "GET",
-				data: ({DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#domain_value").click(function(){
-			$('#edit_wrap').show();
-			var domain = $('#domain_value').attr('name');
-			$.ajax({
-				url: 'update_forms/edit_domain_value_metrics.php',
-				type: "GET",
-				data: ({DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#domain_logistics").click(function(){
-			$('#edit_wrap').show();
-			var domain = $('#domain_logistics').attr('name');
-			$.ajax({
-				url: 'update_forms/edit_domain_logistics.php',
-				type: "GET",
-				data: ({DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#domain_registration").click(function(){
-			$('#edit_wrap').show();
-			var domain = $('#domain_registration').attr('name');
-			$.ajax({
-				url: 'update_forms/edit_domain_registration.php',
-				type: "GET",
-				data: ({DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
-		$("#domain_history").click(function(){
-			$('#edit_wrap').show();
-			var domain = $('#domain_history').attr('name');
-			$.ajax({
-				url: 'update_forms/edit_build_history.php',
-				type: "GET",
-				data: ({DomainName: domain}),
-				success: function(data){
-					$("#edit").html(data);
-				}
-			});
-		});
+		$('#edit_wrap').hide();
 		$(".edit_user").click(function(){
 			$('#edit_wrap').show();
 			var userid = $(this).attr('name');
@@ -1282,9 +1186,9 @@ $(document).ready(function(){
 					$('#noteSuccess').html('New Note Added!');
 					$("#noteSuccess").delay(4000).fadeOut("slow");
 					var html = $('#notes').html();
-					$('#notes').html(html+'<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>');
-					var html = $('#accordionNotes').html();
-					$('#accordionNotes').html(html+'<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>');
+					$('#notes').html('<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>'+html);
+					var html = $('#newDomainNotes').html();
+					$('#newDomainNotes').html('<div class="domainNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>'+html);
 				}
 			});
 		}
@@ -1317,6 +1221,60 @@ $(document).ready(function(){
 	        success: function(data){
 	            $('#noteSuccess').html('Note Modified!');
 				$("#noteSuccess").delay(4000).fadeOut("slow");
+	        }
+	    });
+	    }
+	});
+	//Add Note Function HOST NOTES!!!!!!!!-------------------------------
+	$(document).on('click', '#addHostNote', function() {
+		var host = $(this).data('host');
+		var date = $(this).data('date');
+		var name = $(this).data('name');
+		var note = prompt('Enter New Note:');
+		if(note){
+			$.ajax({
+				url: 'host_note.php',
+				type: "GET",
+				data: ({host: host, name: name, date: date, note: note}),
+				success: function(data){
+					$('#hostNoteSuccess').html('New Note Added!');
+					$("#hostNoteSuccess").delay(4000).fadeOut("slow");
+					var html = $('#notes').html();
+					$('#notes').html('<div class="hostNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>'+html);
+					var html = $('#newHostNotes').html();
+					$('#newHostNotes').html('<div class="hostNote"><p class="noteStamp">'+name+': '+date+'</p><p class="noteContent">'+note+'</p></div>'+html);
+				}
+			});
+		}
+	});
+	//Modify notes function!---HOST NOTES!!!!!!!-------------sweet sauce inc
+	$(document).on('dblclick', '.noteContent', function () {
+    	var oldNote = $(this).html();
+    	$(this).hide();
+    	var parent = $(this).parent();
+    	parent.append('<input type="text" id="imEditing" value="' + oldNote + '">');
+    	$(this).addClass('editingMe');
+	});
+	$(document).on('focusout', '#imEditing', function () {
+	    var newEdit = $('.editingMe');
+	    var addButton = $('#addNote');
+	    var date = addButton.data('date');
+	    var name = addButton.data('name');
+	    var host= addButton.data('host');
+	    var newNote = $(this).val();
+	    $(this).hide();
+	    var oldNote = newEdit.html();
+	    newEdit.show();
+	    newEdit.html(newNote);
+	    $(this).remove();
+	    if(newNote != oldNote){
+	    $.ajax({
+	        url: 'modify_host_note.php',
+	        type: 'GET',
+	        data: ({date: date, name: name, host: host, oldnote: oldNote, newnote: newNote}),
+	        success: function(data){
+	            $('#hostNoteSuccess').html('Note Modified!');
+				$("#hostNoteSuccess").delay(4000).fadeOut("slow");
 	        }
 	    });
 	    }
@@ -1684,4 +1642,277 @@ $(document).ready(function(){
 			key.children('.inProcessSpan').children('.pnumber').html('('+inProcess+')');
 		}
 	}
+});
+
+//NEW DOMAIN ACCORDION javascript
+$(document).ready(function(){
+	//Change css and views on click
+	$(document).on('click', 'span.btn-overview', function(){
+		var button = $(this).data('button');
+
+		$('.currentSelection').addClass('btn-overview');
+		$('.currentSelection').removeClass('currentSelection');
+
+		$(this).removeClass('btn-overview');
+		$(this).addClass('currentSelection');
+
+		if(button == 'domain'){
+
+			var click = $('#domainNav').children('.navItem').data('click');
+			var domain = $('#domainName').html();
+
+			$('#hostArea').hide();
+			$('#domainArea').show();
+			$('#hostNav').hide();
+			$('#domainNav').show();
+			$('#host_basic').hide();
+			$('#domain_basic').show();
+			switch(click){
+				case 'build':
+					$.ajax({
+						url: 'partials/domain_history.php',
+						type: 'GET',
+						data: ({domain: domain}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+				case 'val':
+					$.ajax({
+						url: 'partials/domain_value.php',
+						type: 'GET',
+						data: ({domain: domain}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+				case 'log':
+					$.ajax({
+						url: 'partials/domain_logistics.php',
+						type: 'GET',
+						data: ({domain: domain}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+				case 'reg':
+					$.ajax({
+						url: 'partials/domain_registration.php',
+						type: 'GET',
+						data: ({domain: domain}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+			}
+		} else if(button == 'hostAccount'){
+
+			var click = $('#hostNav').children('.navItem').data('click');
+			var host = $('#hostName').html();
+
+			$('#domainArea').hide();
+			$('#hostArea').show();
+			$('#domainNav').hide();
+			$('#hostNav').show();
+			$('#domain_basic').hide();
+			$('#host_basic').show();
+			switch(click){
+				case 'login':
+					$.ajax({
+						url: 'partials/host_login.php',
+						type: 'GET',
+						data: ({hostAccount: host}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+				case 'billing':
+					$.ajax({
+						url: 'partials/host_billing.php',
+						type: 'GET',
+						data: ({hostAccount: host}),
+						success: function(data){
+							$('#viewBox').html(data);
+						}
+					});
+					break;
+			}
+		}
+	});
+	//Change domain info on click
+	$(document).on('click', '.btn-menu', function(){
+		var sibling = $(this).siblings('.navItem');
+		sibling.removeClass('navItem');
+		sibling.addClass('btn-menu');
+		$(this).removeClass('btn-menu');
+		$(this).addClass('navItem');
+		var click = $(this).data('click');
+		var domain = $('#domainName').html();
+		var host = $('#hostName').html();
+
+		switch(click){
+			case 'build':
+				$.ajax({
+					url: 'partials/domain_history.php',
+					type: 'GET',
+					data: ({domain: domain}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+			case 'val':
+				$.ajax({
+					url: 'partials/domain_value.php',
+					type: 'GET',
+					data: ({domain: domain}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+			case 'log':
+				$.ajax({
+					url: 'partials/domain_logistics.php',
+					type: 'GET',
+					data: ({domain: domain}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+			case 'reg':
+				$.ajax({
+					url: 'partials/domain_registration.php',
+					type: 'GET',
+					data: ({domain: domain}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+			case 'login':
+				$.ajax({
+					url: 'partials/host_login.php',
+					type: 'GET',
+					data: ({hostAccount: host}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+			case 'billing':
+				$.ajax({
+					url: 'partials/host_billing.php',
+					type: 'GET',
+					data: ({hostAccount: host}),
+					success: function(data){
+						$('#viewBox').html(data);
+					}
+				});
+				break;
+		}
+	});
+	//Edit sections
+	$(document).on('click', '.btn-edit', function(){
+		var domain = $('#domainName').html();
+		var host = $('#hostName').html();
+		var click = $(this).data('section');
+
+		switch(click){
+			case 'basic':
+				$.ajax({
+					url: 'update_forms/edit_domain_basic.php',
+					type: 'GET',
+					data: ({DomainName: domain}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'history':
+				$.ajax({
+					url: 'update_forms/edit_build_history.php',
+					type: 'GET',
+					data: ({DomainName: domain}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'value':
+				$.ajax({
+					url: 'update_forms/edit_domain_value_metrics.php',
+					type: 'GET',
+					data: ({DomainName: domain}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'log':
+				$.ajax({
+					url: 'update_forms/edit_domain_logistics.php',
+					type: 'GET',
+					data: ({DomainName: domain}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'reg':
+				$.ajax({
+					url: 'update_forms/edit_domain_registration.php',
+					type: 'GET',
+					data: ({DomainName: domain}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'hbasic':
+				$.ajax({
+					url: 'update_forms/edit_host_basic.php',
+					type: 'GET',
+					data: ({HostAccount: host}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'login':
+				$.ajax({
+					url: 'update_forms/edit_host_login.php',
+					type: 'GET',
+					data: ({HostAccount: host}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+			case 'billing':
+				$.ajax({
+					url: 'update_forms/edit_host_billing.php',
+					type: 'GET',
+					data: ({HostAccount: host}),
+					success: function(data){
+						$('#edit_wrap').show();
+						$('#edit').html(data);
+					}
+				});
+				break;
+		}
+	});
 });
