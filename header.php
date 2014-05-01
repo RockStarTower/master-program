@@ -30,7 +30,7 @@ echo autocompleteRegistrarList();
 </script>
 </head>
 <body>
-<canvas id="spacejs"></canvas>
+
 <div id="page-wrap">
 <div id="header-wrapper">
 	<img id="logo_small" src="<?=root_url();?>images/Darth-Serverus-Logo_small.png" />

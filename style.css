@@ -2694,7 +2694,7 @@ h2 #addNote, h2 #addHostNote {
     background: #2d4056;
     font-size: 14px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 10px;
     line-height:35px;
     background: #428BCA;
 }
