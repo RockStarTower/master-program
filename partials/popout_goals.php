@@ -44,7 +44,7 @@ $vertical = $_GET['vertical'];
 $country = $_GET['country'];
 $language = $_GET['language'];
 if(isset($_GET['blog']) && !empty($_GET['blog'])){
-	$blog = 'data-blog="'.$blog.'"';
+	$blog = 'data-blog="'.$_GET['blog'].'"';
 }
 else {
 $blog = '';
