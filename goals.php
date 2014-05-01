@@ -17,9 +17,11 @@ $curDate = date ("Y-m-d");
 $curMonth = date('m');
 $curYear = date('Y');
 $beginWeek = date('d', strtotime('last sunday'));
+$beginWeekMonth = date('m', strtotime('last sunday'));
 $endWeek = date('d', strtotime('this saturday'));
-$weekBegin = $curYear . '-' . $curMonth . '-' . $beginWeek;
-$weekEnd = $curYear . '-' . $curMonth . '-' . $endWeek;
+$endWeekMonth = date('m', strtotime('this saturday'));
+$weekBegin = $curYear . '-' . $beginWeekMonth . '-' . $beginWeek;
+$weekEnd = $curYear . '-' . $endWeekMonth . '-' . $endWeek;
 //if( ! isset($_GET['goaldate'])){
 $query1 = "SELECT * FROM `goals` ORDER BY `goals`.`WeekOf` DESC LIMIT 1";
 $goaldate = mysqli_query($mysqli, $query1);
@@ -111,7 +113,7 @@ switch ($viewPermissions) {
 	
 $result = mysqli_fetch_assoc($goaldate);
 $goals[] = json_decode($result['Launch Goals'], true);
-$query = "SELECT * FROM DomainDetails WHERE Status='In Process' AND $prevRole != '0000-00-00' OR DateComplete BETWEEN '$weekBegin' AND '$weekEnd' AND $prevRole != '0000-00-00'";
+$query = "SELECT * FROM DomainDetails WHERE Status='In Process' AND $prevRole!='0000-00-00' OR DateComplete BETWEEN '$weekBegin' AND '$weekEnd' AND $prevRole!='0000-00-00'";
 $results = mysqli_query($mysqli, $query);
 $rows = mysqli_num_rows($results);
 $goalcount = count($goals[0]);
@@ -180,14 +182,14 @@ for ($a = 0; $a < $rows; $a++){
 				}				
 			}
 			elseif ($viewPermissions == 'QA' && $user == 'QAInspector'){
-				if (strtotime($domain_data[$role]) == true && $domain_data['Type'] == $goals[0][$i]['Type']){
+				if (strtotime($domain_data['DateComplete']) == true){
 					$goals[0][$i]['Goal'] = (int)$goals[0][$i]['Goal'] - 1;
 				}
-				elseif ($domain_data[$user] != NULL && strtotime($domain_data[$role]) == false && $goals[0][$i]['Type'] == $domain_data['Type']){
-					$goals[0][$i]['Assigned'] = (int)$goals[0][$i]['Assigned'] + 1;
-				}
-				elseif ($domain_data[$user] == NULL && strtotime($domain_data['DateComplete']) == false) {
+				if ($domain_data[$user] == NULL && strtotime($domain_data['DateComplete']) == false) {
 					$goals[0][$i]['InProcess'] = (int)$goals[0][$i]['InProcess'] + 1;
+				}
+				elseif ($domain_data[$user] != NULL && strtotime($domain_data['DateComplete']) == false && $goals[0][$i]['Type'] == $domain_data['Type']){
+					$goals[0][$i]['Assigned'] = (int)$goals[0][$i]['Assigned'] + 1;
 				}
 			}
 		}
