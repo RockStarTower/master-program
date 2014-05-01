@@ -179,9 +179,9 @@ for ($a = 0; $a < $rows; $a++){
 					(int)$goals[0][$i]['Goal'] = (int)$goals[0][$i]['Goal'] - 1;
 				}				
 			}
-			elseif ($goals[0][$i]['Vertical'] == $domain_data['Vertical'] && $goals[0][$i]['Country'] == $domain_data['Country'] && $goals[0][$i]['Language'] == $domain_data['Language'] && $viewPermissions == 'QA'){
+			elseif ($viewPermissions == 'QA' && $user == 'QAInspector'){
 				if (strtotime($domain_data[$role]) == true && $domain_data['Type'] == $goals[0][$i]['Type']){
-					(int)$goals[0][$i]['Goal'] = (int)$goals[0][$i]['Goal'] - 1;
+					$goals[0][$i]['Goal'] = (int)$goals[0][$i]['Goal'] - 1;
 				}
 				elseif ($domain_data[$user] != NULL && strtotime($domain_data[$role]) == false && $goals[0][$i]['Type'] == $domain_data['Type']){
 					$goals[0][$i]['Assigned'] = (int)$goals[0][$i]['Assigned'] + 1;
