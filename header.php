@@ -35,7 +35,7 @@ echo autocompleteRegistrarList();
 <div id="header-wrapper">
 	<img id="logo_small" src="<?=root_url();?>images/Darth-Serverus-Logo_small.png" />
 	<div id="header">
-	<div id="login_header" >
+	<div id="login_header" data-permissions="<?=$permissions?>">
 		<div>
 			<img class="storm" src="<?=root_url();?>images/storm-trooper.png">
 			<a class="user_log" href="#"><?php echo $user; echo ' ('.$my_tasks.')'; ?></a>

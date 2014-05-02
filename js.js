@@ -55,7 +55,9 @@
 		$('#deselectall').click(function(){
 			$('.bulkcheckbox').prop('checked', false);
 		});
-		$('body').append('<img id="tie" src="images/bunny.png" />'); 
+		var flyby = $('#login_header').data('permissions');
+		if(flyby == 'Admin'){var flybyguy = '<img id="tie" src="images/goodluck.png" />';} else {var flybyguy = '<img id="tie" src="images/tiefighter.png" />';}
+		$('body').append(flybyguy); 
 		function flyTie(){
 		 tie.css('left', startPos);
 		 tie.animate({left: -500}, 7000, 'linear')
