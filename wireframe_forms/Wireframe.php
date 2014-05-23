@@ -28,6 +28,8 @@ tinymce.init({
 	height : 529
  });
 </script>
+<body style="font-family: 'Tauri', sans-serif;">
+
 <div id="image_error"></div>
 <div id="wrapper">
 <?php if ($permissions == "Designer" || $permissions == "Admin"){
@@ -413,18 +415,20 @@ tinymce.init({
 	<input type="hidden" name="designed" value="true">
 	<?php //} ?>
 
-	<input type="submit" name="submit" value="Submit">
+	<input type="submit" name="submit" value="Submit" class="bottomsubmit">
 </ul>
 </form>
 <div id="edit_wrap"><span class="close">x</span><textarea class="textarea"></textarea></div>
 </div>
 
 </div>
+</body>
 <?php
 } else {?>
 	<div id="notauthorized">
    <p style="color: #fff;">You are not authorized to access this page.</p>
    <a href="<?=root_url();?>users/login.php">Please Login</a></div><?php
 }
+
 include ('../footer.php');
 ?>
