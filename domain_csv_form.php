@@ -30,32 +30,171 @@ if(login_check($mysqli) == true) {
 			<li>
 				<select name="Vertical" class="Vertical required" required>
 					<option value="">Vertical</option>
+					<option>Accident & Personal Injury Attorneys</option>
+					<option>Accountants</option>
+					<option>Agricultural</option>
+					<option>Agricultural Equipment & Supplies</option>
+					<option>Appeal Attorneys</option>
+					<option>Appliance Sales</option>
+					<option>Appliance Services</option>
+					<option>Art Galleries & Dealers</option>
+					<option>Arts & Entertainment</option>
+					<option>Audio Visual</option>
+					<option>Auto Accessories</option>
+					<option>Auto Body & Paint</option>
+					<option>Auto Dealers</option>
+					<option>Auto Insurance</option>
+					<option>Auto Parts</option>
+					<option>Auto Service</option>
 					<option>Automotive</option>
+					<option>Bakeries</option>
+					<option>Bankruptcy Attorneys</option>
 					<option>Beauty & Fashion</option>
+					<option>Beauty Schools</option>
 					<option>Business</option>
+					<option>Business Attorneys</option>
+					<option>Camping</option>
+					<option>Car Wash & Auto Detailing</option>
+					<option>Child Care</option>
+					<option>Child Education</option>
+					<option>Chiropractors</option>
+					<option>Cleaning Services</option>
+					<option>Clothing & Accessories</option>
+					<option>Colleges & Universities</option>
+					<option>Commercial Insurance</option>
+					<option>Computer Services</option>
+					<option>Concrete Contractors</option>
 					<option>Construction & Contractors</option>
+					<option>Consulting</option>
+					<option>Cosmetics & Hygiene</option>
+					<option>Counseling</option>
+					<option>Crafts & Hobbies</option>
+					<option>Criminal Attorneys</option>
+					<option>Damage Contractors</option>
+					<option>Dentist</option>
+					<option>Doors</option>
 					<option>Education & Development</option>
-					<option>Entertainment</option>
-					<option>Environmental</option>
+					<option>Educational Books & Supplies</option>
+					<option>Electricians</option>
+					<option>Electronics</option>
+					<option>Emergency Care</option>
+					<option>Energy</option>
+					<option>Energy & Environment</option>
+					<option>Entertainers</option>
+					<option>Events</option>
+					<option>Exercise</option>
+					<option>Extreme Sports</option>
+					<option>Family & Divorce Attorneys</option>
+					<option>Fence Contractors</option>
+					<option>Financial Planning</option>
 					<option>Finance & Money</option>
+					<option>Florists</option>
 					<option>Food & Cooking</option>
+					<option>Food Services</option>
+					<option>Food Suppliers</option>
+					<option>Funeral Homes</option>
+					<option>Furniture</option>
+					<option>Garage Doors</option>
+					<option>Garden Equipment & Supplies</option>
+					<option>General Attorneys</option>
+					<option>General Contractors</option>
+					<option>Glass</option>
 					<option>Government & Politics</option>
-					<option>Health & Medical</option>
+					<option>Hair & Skin Care</option>
+					<option>Health & Medical </option>
+					<option>Health Care Clinics</option>
+					<option>Heavy Construction Equipment</option>
 					<option>Home & Garden</option>
+					<option>Home Insurance</option>
+					<option>Home Health Care</option>
+					<option>Hotels & Lodging</option>
+					<option>HVAC Contractors</option>
 					<option>Industrial & Manufacturing</option>
+					<option>Industrial Equipment & Supplies</option>
+					<option>Insurance</option>
+					<option>Interior Design</option>
+					<option>Internet Service Providers</option>
+					<option>Immigration Attorneys</option>
+					<option>Jewelry</option>
+					<option>K-12 Education</option>
+					<option>Landscape</option>
 					<option>Law</option>
+					<option>Life Insurance</option>
+					<option>Loans & Financing</option>
+					<option>Locks, Keys, & Safes</option>
+					<option>Marketing</option>
+					<option>Medical Equipment & Supplies</option>
+					<option>Medical Insurance</option>
+					<option>Message</option>
 					<option>Miscellaneous</option>
-					<option>N/A</option>
-					<option>Pets & Animals</option>
+					<option>Mobile Windshield Repair</option>
+					<option>Motor Sports & Accessories</option>
+					<option>Money Services</option>
+					<option>Movies & Theaters</option>
+					<option>Moving & Storage</option>
+					<option>Music</option>
+					<option>Natural Health Care</option>
+					<option>Nightlife</option>
+					<option>Novels & Stories</option>
+					<option>Nursing Homes & Assisted Living</option>
+					<option>Online Marketing</option>
+					<option>Opticians & Optical Goods</option>
+					<option>Optometrists</option>
+					<option>Painters & Wallpaper Hangers</option>
+					<option>Party Planners</option>
+					<option>Paving Contractors</option>
+					<option>Pest Control</option>
+					<option>Pet Day Care & Boarding</option>
+					<option>Pet Stores & Supplies</option>
+					<option>Pet Training</option>
+					<option>Pets</option>
+					<option>Phone Service</option>
+					<option>Photography</option>
+					<option>Plumbers</option>
+					<option>Podiatrists</option>
+					<option>Pool Contractors</option>
+					<option>Primary Care</option>
+					<option>Printing Services</option>
+					<option>Private Lessons</option>
+					<option>Processing & Manufacturing</option>
 					<option>Real Estate</option>
-					<option>Recreation & Sports</option>
+					<option>Real Estate Agents & Brokers</option>
+					<option>Real Estate Attorneys</option>
+					<option>Recreation & Sports
+					<option>Recycling</option>
 					<option>Relationships & Family</option>
 					<option>Religion & Spirituality</option>
+					<option>Religious Goods</option>
+					<option>Religious Organization</option>
+					<option>Religious School</option>
+					<option>Remodeling Contractors</option>
+					<option>Repair & Restoration</option>
+					<option>Restaurants</option>
+					<option>Roofers</option>
+					<option>Sanitation</option>
+					<option>Security</option>
+					<option>Security Systems</option>
 					<option>Shopping</option>
+					<option>Signs</option>
+					<option>Spas & Salons
+					<option>Specialty Foods</option>
+					<option>Sports & Sporting Goods</option>
+					<option>Tax Services</option>
 					<option>Technology</option>
-					<option>Travel</option>
-					<option>Insurance</option>
-					<option>Dentist</option>
+					<option>Telephones</option>
+					<option>Timeshares</option>
+					<option>Tires & Wheels</option>
+					<option>Trade Schools</option>
+					<option>Transportation</option>
+					<option>Travel & Tourism</option>
+					<option>Travel Agencies</option>
+					<option>Tree Service</option>
+					<option>TV Service</option>
+					<option>Veterinarians</option>
+					<option>Wedding</option>
+					<option>Windows</option>
+
+					
 				</select>
 			</li>
 			<li>
