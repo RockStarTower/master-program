@@ -133,6 +133,7 @@ if ($result = mysqli_query($con, $request) or die("Error: ".mysqli_error($con)))
 				<li><a href="javascript::void(0);">Movies & Theaters</a></li>
 				<li><a href="javascript::void(0);">Moving & Storage</a></li>
 				<li><a href="javascript::void(0);">Music</a></li>
+				<li><a href="javascript::void(0);">N/A</a></li>
 				<li><a href="javascript::void(0);">Natural Health Care</a></li>
 				<li><a href="javascript::void(0);">Nightlife</a></li>
 				<li><a href="javascript::void(0);">Novels & Stories</a></li>
