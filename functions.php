@@ -187,6 +187,7 @@ function autocompleteVerticalList() {
 	echo '"Movies & Theaters",';
 	echo '"Moving & Storage",';
 	echo '"Music",';
+	echo '"N/A",';
 	echo '"Natural Health Care",';
 	echo '"Nightlife",';
 	echo '"Novels & Stories",';

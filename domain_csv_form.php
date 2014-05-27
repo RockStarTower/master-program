@@ -133,6 +133,7 @@ if(login_check($mysqli) == true) {
 					<option>Movies & Theaters</option>
 					<option>Moving & Storage</option>
 					<option>Music</option>
+					<option>N/A</option>
 					<option>Natural Health Care</option>
 					<option>Nightlife</option>
 					<option>Novels & Stories</option>
