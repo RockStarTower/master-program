@@ -9,6 +9,7 @@ include 'functions.php';
 <link rel="stylesheet" type="text/css" href="<?=root_url();?>style.css">
 <link rel="stylesheet" type="text/css" href="responsive.css">
 <link rel="stylesheet" href="jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.css" />
+<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
