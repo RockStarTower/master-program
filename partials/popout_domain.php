@@ -175,13 +175,13 @@ function load_domain($mysqli, $query, $fullname, $permissions, $writing){
 			<p>Country: <strong><?=$domain_data['Country'];?></strong></p>
 			<p>Language: <strong><?=$domain_data['Language'];?></strong></p>
 			<p><label for="Wireframe">Wireframe: </label>
-			<input required id="Wireframe" type="number" step="1" placeholder="Wireframe" name="Wireframe" value="<?=$domain_data['Wireframe'];?>"></p>
+			<input required id="Wireframe" type="number" step="1" placeholder="Wireframe" name="wireframe" value="<?=$domain_data['Wireframe'];?>"></p>
 			<p><label for="Theme">Theme: </label>
-			<select id="Theme" name="Theme">
+			<select id="Theme" name="theme">
 			<?php json_dropdown('theme_list', $domain_data['Theme']);?>
 			</select></p>
 			<p><label for="managewpaccount">Manage WP Account: </label>
-			<select required id="managewpaccount">
+			<select required id="managewpaccount" name="managewpaccount">
 			<?php json_dropdown('manage_list');?>
 			</select></p>
 			<p><label for="databasename">Database Name: </label>
