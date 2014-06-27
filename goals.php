@@ -182,7 +182,7 @@ for ($a = 0; $a < $rows; $a++){
 				}				
 			}
 			elseif ($viewPermissions == 'QA' && $user == 'QAInspector'){
-				if (strtotime($domain_data['DateComplete']) == true){
+				if (strtotime($domain_data['DateComplete']) == true && $goals[0][$i]['Type'] == $domain_data['Type']){
 					$goals[0][$i]['Goal'] = (int)$goals[0][$i]['Goal'] - 1;
 				}
 				if ($domain_data[$user] == NULL && strtotime($domain_data['DateComplete']) == false) {
